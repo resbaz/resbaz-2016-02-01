@@ -1,0 +1,28 @@
+{
+    "type": "FeatureCollection",
+    "features": [    
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":[144.96289,-37.79901] 
+            },
+            "properties": {
+                "marker-color": "#2b3990",
+                "details": "<a href='http://billmills.github.io/resbaz-site/local.html?site=melbourne'>University of Melbourne</a>"
+            }
+        },
+
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":[174.8164522, -36.8769714] 
+            },
+            "properties": {
+                "marker-color": "#2b3990",
+                "details": "<a href='http://billmills.github.io/resbaz-site/local.html?site=auckland'>Auckland</a>"
+            }
+        }
+    ]
+}
