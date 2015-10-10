@@ -1,0 +1,28 @@
+{
+    "type": "FeatureCollection",
+    "features": [    
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":[144.960164, -37.7982125] 
+            },
+            "properties": {
+                "marker-color": "#2b3990",
+                "details": "South Lawn"
+            }
+        },
+
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":[144.9606974, -37.7970048] 
+            },
+            "properties": {
+                "marker-color": "#2b3990",
+                "details": "Union House"
+            }
+        }
+    ]
+}
