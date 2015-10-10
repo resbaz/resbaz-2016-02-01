@@ -171,7 +171,7 @@ header .intro-text .skills {
 }
 
 section {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 section h2 {
@@ -480,4 +480,20 @@ footer .footer-below {
     padding: 2em;
     max-height: 450px;
     overflow: auto;
+}
+
+a.light-bkg{
+    border-color: #18BC9C;
+    color: #18BC9C;
+}
+
+a.light-bkg:hover{
+    background-color: #ECECEC;
+    border-color: #18BC9C;
+}
+
+hr.divider{
+    width: 50%;
+    border-color: #D0D0D0;
+    border-width: 2px;
 }
