@@ -171,7 +171,7 @@ header .intro-text .skills {
 }
 
 section {
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
 section h2 {
@@ -496,4 +496,6 @@ hr.divider{
     width: 50%;
     border-color: #D0D0D0;
     border-width: 2px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
