@@ -106,8 +106,12 @@ hello
             <div class="col-lg-12 text-center">
                 <h1>Schedule</h1>
                 <hr class="star-primary">
-            <p> {{page.schedule}} </p>
             </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+              <p>{{page.schedule}}</p>
+            </div>
+        </div>
             {% for d in page.days %}
                 <div class="col-md-4">
                         <h4>{{ d.day }}</h4>
