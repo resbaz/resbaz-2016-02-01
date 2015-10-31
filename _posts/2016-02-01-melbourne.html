@@ -93,8 +93,6 @@ sponsors:
     <!-- /.container-fluid -->
 </nav>
 
-hello
-
 <!-- Header -->
 <header>
     <div class="container">
@@ -124,16 +122,7 @@ hello
               <p>{{page.menu}}</p>
             </div>
         </div>
-            {% for d in page.headings %}
-                <div class="col-md-4">
-                        <h4>{{ d.heading }}</h4>
-                        <div class='list-group'>
-                            {% for tool in d.tools %}
-                                <a class='list-group-item'>{{ tool.name }}</a>
-                            {% endfor %}
-                        </div>
-                </div>
-            {% endfor %}
+
         </div>
     </div>
 </section>
