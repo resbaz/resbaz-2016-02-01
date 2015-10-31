@@ -9,6 +9,10 @@ accommodation: For the 2016 ResBaz Conference there may be some free camping ava
 menu: List of tools on offer at ResBaz 2016
 classes:
  - class: Main Streams
+   tools:
+   - name: MATLAB
+   - name: R
+   - name: Python
  - class: Minor Electives
 schedule: Each day at ResBaz will be split in half. The first half will be dedicated to classroom teaching time where we will fill your brains with the latest digital research skills. The second half will be about networking with your fellow cross-disciplinary researchers and having fun. 
 days:
@@ -127,6 +131,11 @@ sponsors:
             {% for d in page.classes %}
                 <div class = "col-md-6 text-center">
                     <h4>{{d.class}}</h4>
+                    <div class = 'list-group'>
+                        {% for tool in d.tools}
+                            <a class='list-group-item'>{{ tool.name }}</a>
+                        {% endfor %}
+                    </div>
                 </div>
             {% endfor %}
     </div>
