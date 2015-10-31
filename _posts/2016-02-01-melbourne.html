@@ -6,6 +6,15 @@ location: University of Melbourne
 dates: February 1-3, 2016
 map: sites/melbourne.geojson
 accommodation: For the 2016 ResBaz Conference there may be some free camping available under the Research Bazaar Bedouin tents on the lawn. You'll need to bring your own sleeping bag, pillow, towel, and earplugs (for the snorers!). Showers will be available in a nearby campus building. Let us know if you're intereseted in camping out at ResBaz 2016 when you fill in your registration form. <br><br> If camping doesn't sound like your style - there are many alternative options close to the The University of Melbourne. For more information see <a href = "http://services.unimelb.edu.au/housing/moving-to-melbourne/temporary-accommodation" target="_blank">here</a>.
+menu:
+headings:
+ - heading: Main Streams
+   tools:
+   - name: MATLAB
+   - name: Python
+- heading: Electives
+  tools:
+  - name: Blah
 schedule: Each day at ResBaz will be split in half. The first half will be dedicated to classroom teaching time where we will fill your brains with the latest digital research skills. The second half will be about networking with your fellow cross-disciplinary researchers and having fun. 
 days:
  - day: Monday February 1
@@ -101,6 +110,35 @@ hello
         </div>
     </div>
 </header>
+
+<!-- Menu -->
+<section id='menuSection'>
+    <div class='container'>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>Schedule</h1>
+                <hr class="star-primary">
+            </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+              <p>{{page.menu}}</p>
+            </div>
+        </div>
+            {% for d in page.headings %}
+                <div class="col-md-4">
+                        <h4>{{ d.heading }}</h4>
+                        <div class='list-group'>
+                            {% for tool in d.tools %}
+                                <a class='list-group-item'>{{ tool.name }}</a>
+                            {% endfor %}
+                        </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<hr class='divider'></hr>
 
 <!-- Schedule -->
 <section id='scheduleSection'>
