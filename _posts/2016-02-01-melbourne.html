@@ -11,6 +11,7 @@ classes:
  - class: Main Streams
    tools:
     - name: MATLAB Data Analysis
+    - blurb: MATLAB is a powerful and versatile tool for data acquisition, analysis and visualisation, which is widely used by the research community. In this Software Carpentry workshop, you’ll learn the basics of shell programming, version control, and MATLAB to make data analysis quick and more effective. It covers all steps from reading in data to writing scripts and functions to creating figures that can be shared and published.
     - name: R Data Analysis
     - name: Python Data Analysis
     - name: NLTK Natural Language Processing
@@ -146,7 +147,7 @@ sponsors:
                     <h4>{{d.class}}</h4>
                     <div class = 'list-group'>
                         {% for tool in d.tools %}
-                            <a class = 'list-group-item.active'>{{ tool.name }}</a>
+                            <a>{{ tool.name }}</a><br>
                         {% endfor %}
                     </div>
                 </div>
