@@ -85,6 +85,9 @@ sponsors:
                     <a href="#page-top"></a>
                 </li>
                 <li class="page-scroll">
+                    <a href="#menuSection">Menu</a>
+                </li>
+                <li class="page-scroll">
                     <a href="#scheduleSection">Schedule</a>
                 </li>
                 <li class="page-scroll">
@@ -113,6 +116,36 @@ sponsors:
         </div>
     </div>
 </header>
+
+<!-- Menu -->
+<section id='menuSection'>
+    <div class = 'container'>
+        <div class = "row">
+            <div class = "col-lg-12 text-center">
+                <h1> Menu </h1>
+                <hr class = "star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+              <p>{{page.menu}}</p>
+            </div>
+        </div>
+            {% for d in page.classes %}
+                <div class = "col-md-6 text-center">
+                    <h4>{{d.class}}</h4>
+                    <div class = 'list-group'>
+                        {% for tool in d.tools %}
+                            <a>{{ tool.name }}</a><br>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endfor %}
+    </div>
+</section>
+
+
+<hr class='divider'></hr>
 
 <!-- Schedule -->
 <section id='scheduleSection'>
