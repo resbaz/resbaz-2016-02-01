@@ -525,11 +525,12 @@ ul.nav-list li a:hover{
     color: #FFFFFF;
 }
 
-/*header{
+header{
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://c1.staticflickr.com/9/8643/16463493369_fef9ae0e77_h.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
-}*/
+}
+
 
 header.header-melb{
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://farm1.staticflickr.com/681/22032155473_bca28567d4_z.jpg);
