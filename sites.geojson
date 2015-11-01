@@ -9,7 +9,7 @@
             },
             "properties": {
                 "marker-color": "#2b3990",
-                "details": "<a href='http://billmills.github.io/resbaz-2016-02-01/melbourne'>University of Melbourne</a>"
+                "details": "<a href='http://resbaz.github.io/resbaz-2016-02-01/melbourne'>University of Melbourne</a>"
             }
         },
 
@@ -21,7 +21,7 @@
             },
             "properties": {
                 "marker-color": "#2b3990",
-                "details": "<a href='http://billmills.github.io/resbaz-2016-02-01/auckland'>Auckland</a>"
+                "details": "<a href='http://resbaz.github.io/resbaz-2016-02-01/auckland'>Auckland</a>"
             }
         }
     ]
