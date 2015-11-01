@@ -526,9 +526,21 @@ ul.nav-list li a:hover{
 }
 
 header{
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://c1.staticflickr.com/9/8643/16463493369_fef9ae0e77_h.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
+}
+
+@media(min-width:768px) {
+    nav {
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    header .container{
+        padding-top: 150px;
+    }
+
 }
 
 
