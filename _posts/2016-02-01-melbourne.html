@@ -308,8 +308,9 @@ sponsors:
     var listElements = toolList.getElementsByClassName('list-group-item')
     console.log(listElements)
     for(var i=0; i<listElements.length; i++){
-            console.log(this.children[0])
-            console.log(this.children[0].id)
+            console.log(listElements[i].children)
+            console.log(listElements[i].children[0])
+            console.log(listElements[i].children[0].id)
             // listElements[i].onclick = function(){
             //      idOfBlurb = this.id + 'Blurb'
             //      document.getElementById(idOfBlurb).classList.toggle('hidden');
