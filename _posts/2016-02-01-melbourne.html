@@ -154,9 +154,9 @@ sponsors:
             </div>
         </div>
             {% for d in page.classes %}
-                <div class = "col-md-6 text-center">
+                <div class = "col-md-6 text-center" id = 'tool-list'>
                     <h4>{{d.class}}</h4>
-                    <div class = 'list-group' id = 'tool-list'>
+                    <div class = 'list-group'>
                         {% for tool in d.tools %}
                         <div class = 'list-group-item text-left'>
                             <a id = {{ tool.id }} >{{ tool.name }}</a><br>
