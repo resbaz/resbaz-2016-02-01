@@ -141,7 +141,7 @@ sponsors:
             {% for d in page.classes %}
                 <div class = "col-md-6 text-center">
                     <h4>{{d.class}}</h4>
-                    <div class = 'list-group'>
+                    <div class = 'list-group' id = 'tool-list'>
                         {% for tool in d.tools %}
                         <div class = 'list-group-item'>
                             <a id = {{ tool.id }} >{{ tool.name }}</a><br>
@@ -302,5 +302,14 @@ sponsors:
 
 <!-- TEST SCRIPT -->
 <script> 
-console.log('hello')
+
+    var listElements = document.getElementById('tool-list')
+    console.log(listElements)
+    // for(var i=0; i<listElements.length; i++){
+    //         listElements[i].onclick = function(){
+    //              idOfBlurb = this.id + 'Blurb'
+    //              document.getElementById(idOfBlurb).classList.toggle('hidden');
+    //         }
+    //     }
+
 </script>
