@@ -15,13 +15,21 @@ classes:
       id: mat
       blurb: MATLAB is a powerful and versatile tool for data acquisition, analysis and visualisation, which is widely used by the research community. In this Software Carpentry workshop, you’ll learn the basics of shell programming, version control, and MATLAB to make data analysis quick and more effective. It covers all steps from reading in data to writing scripts and functions to creating figures that can be shared and published.
     - name: R Data Analysis
+      id: r
     - name: Python Data Analysis
+      id: py
     - name: NLTK Natural Language Processing
+      id: nltk
     - name: AutoDesk 3D Printing
+      id: ad3d
     - name: 3D Slicer 3D Printing
+      id: 3ds
     - name: HTML and CSS Web Development
+      id: web
     - name: D3 Data Visualization
+      id: d3
     - name: CartoDB and MapBox Research Maps
+      id: map
  - class: Minor Electives
    tools:
     - name: Google Forms
@@ -136,7 +144,7 @@ sponsors:
                     <div class = 'list-group'>
                         {% for tool in d.tools %}
                         <div class = 'list-group-item'>
-                            <a id = {{ tool.id }} >{{ tool.name }}</a><br>
+                            <a id = {{ tool.id }}'' >{{ tool.name }}</a><br>
                             <p class = 'hidden'> {{ tool.blurb }} </p>
                         </div>
                         {% endfor %}
