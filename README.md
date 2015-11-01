@@ -14,7 +14,7 @@ This website is built from the [Start Bootstrap Freelancer theme](https://github
 
  - [Install Jekyll](http://jekyllrb.com/docs/installation/)
  - in the base directory of this repo, do `jekyll serve`
- - if all has gone well, you'll be able to visit your website at `127.0.0.1:4000/resbaz-site/`
+ - if all has gone well, you'll be able to visit your website at `127.0.0.1:4000/resbaz-2016-02-01/`
 
 ### Contribution Guide
 
