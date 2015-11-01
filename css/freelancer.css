@@ -88,7 +88,7 @@ header {
 }
 
 header .container {
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 50px;
 }
 
@@ -536,4 +536,6 @@ header.header-melb{
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://farm1.staticflickr.com/681/22032155473_bca28567d4_z.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    position: absolute;
+    top: 100px;
 }
