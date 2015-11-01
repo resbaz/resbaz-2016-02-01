@@ -525,11 +525,6 @@ ul.nav-list li a:hover{
     color: #FFFFFF;
 }
 
-header{
-    background-repeat: no-repeat;
-    background-size: cover; 
-}
-
 @media(min-width:768px) {
     nav {
         position: fixed;
