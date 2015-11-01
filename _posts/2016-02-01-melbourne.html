@@ -159,13 +159,12 @@ sponsors:
         </div>
             {% for d in page.days %}
                 <div class="col-md-4">
-                        <h4>{{ d.day }}</h4>
-                        {% for session in d.sessions %}
-                        <p>{{ session.title }}</p>
-                        <div class='list-group'>                            
-                                <a class='list-group-item'>{{ session.details }}</a>
-                        </div>
+                        <h4>{{ d.day }}</h4>                        
+                        <div class='list-group'>
+                        {% for session in d.sessions %}                        
+                                <a class='list-group-item'>{{ session.title }}</a>
                         {% endfor %}
+                        </div>                        
                 </div>
             {% endfor %}
         </div>
