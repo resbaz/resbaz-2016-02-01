@@ -35,23 +35,24 @@ classes:
       id: map
  - class: Minor Electives
    tools:
-    - name: Google Forms
-    - name: Kobo Toolbox
-    - name: Pyschopy Pyschology Stimulus Presentation
-    - name: REDCap Clinical Surveys
-    - name: Galaxy Genomics Data Workflows
-    - name: Open Refine Data Cleaning
-    - name: Omeka Image Repositories
-    - name: Latex Documents
-    - name: AURIN Urban Data
-    - name: TinkerCad, Fusion 360, MudBox for 3D Objects
-    - name: Gephi Network Visualization
-    - name: Databases and SQL
-    - name: Nectar High Performance Computing
-    - name: Airtables Data Structures
-    - name: Virtual Machines
-    - name: Data Scraping
-    - name: Reference Management
+    - name: Data Collection
+      id: daco
+      blurb: Electives include - Pyschopy for pyschology stimulus presentation experiments, REDCap for medical/clinical surveys, AURIN for urban data
+    - name: Data Mining
+      id: dami
+      blurb: Electives include - Google forms, Kobo Toolbox for mobile data, Open refine for data cleaning, Social media and internet data mining, Research impact analysis
+    - name: Research Skills
+      id: res
+      blurb: Electives include - Latex for scientific documents, Academic refernce management, Social media for research engagement
+    - name: 3D Modelling
+      id: 3Dmod
+      blurb: Electives include - TinkerCAD for 3D printing and drawing, Fusion 360 for 3D printing and drawing, MudBox for 3D painting and sculpting
+    - name: Computing
+      id: comp
+      blurb: Electives include - Nectar for basic high performance computing, Introduction to Virtual Machines, Databases and SQL
+    - name: Other
+      id: other
+      blurb: Electives include - Galaxy for genomics data workflows, Airtables for data structures, Gephi for network visualization, Omeka for image repositories
 schedule: Each day at ResBaz will be split into daytime and evening events. The day will be dedicated to classroom teaching time where we will fill your brains with the latest digital research skills. The evening will be about networking with your fellow cross-disciplinary researchers and having fun. <br><br> During the day classes are broken into three 90 minute sessions, starting at 10.30 am, 1.30 pm and 3 pm. A detailed timetable will be displayed here once sessions are confirmed.<br>
 days:
  - day: Monday February 1
@@ -157,7 +158,7 @@ sponsors:
                     <h4>{{d.class}}</h4>
                     <div class = 'list-group' id = 'tool-list'>
                         {% for tool in d.tools %}
-                        <div class = 'list-group-item text-right'>
+                        <div class = 'list-group-item text-left'>
                             <a id = {{ tool.id }} >{{ tool.name }}</a><br>
                             <p class = 'hidden' id = {{ tool.id}}Blurb > {{ tool.blurb }} </p>
                         </div>
