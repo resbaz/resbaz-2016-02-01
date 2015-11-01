@@ -5496,7 +5496,7 @@ button.list-group-item-danger.active:focus {
   margin-bottom: 0;
   line-height: 1.3;
 }
-.hidden{
+.list-group-item.hidden{
   display: none;
 }
 .panel {
