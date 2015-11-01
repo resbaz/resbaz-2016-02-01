@@ -302,17 +302,16 @@ sponsors:
 
 <!-- TEST SCRIPT -->
 <script> 
-    var listElements1 = document.getElementsByClassName('list-group-item')
-    console.log(listElements1)
+    // var listElements1 = document.getElementsByClassName('list-group-item')
+    // console.log(listElements1)
     var toolList = document.getElementById('tool-list')
-    console.log(toolList)
     var listElements = toolList.getElementsByClassName('list-group-item')
     console.log(listElements)
-    // for(var i=0; i<listElements.length; i++){
-    //         listElements[i].onclick = function(){
-    //              idOfBlurb = this.id + 'Blurb'
-    //              document.getElementById(idOfBlurb).classList.toggle('hidden');
-    //         }
-    //     }
+    for(var i=0; i<listElements.length; i++){
+            listElements[i].onclick = function(){
+                 idOfBlurb = this.id + 'Blurb'
+                 document.getElementById(idOfBlurb).classList.toggle('hidden');
+            }
+        }
 
 </script>
