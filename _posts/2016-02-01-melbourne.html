@@ -145,7 +145,7 @@ sponsors:
                         {% for tool in d.tools %}
                         <div class = 'list-group-item'>
                             <a id = {{ tool.id }} >{{ tool.name }}</a><br>
-                            <p class = 'hidden' id = {{ tool.id + 'Blurb' }}> {{ tool.blurb }} </p>
+                            <p class = 'hidden' id = {{ tool.id}} + 'Blurb' > {{ tool.blurb }} </p>
                         </div>
                         {% endfor %}
                     </div>
