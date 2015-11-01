@@ -165,7 +165,7 @@ sponsors:
                     <div class = 'list-group'>
                         {% for tool in d.tools %}
                         <div class = 'list-group-item text-left'>
-                            <a id = {{ tool.id }} >{{ tool.name }}</a><br>
+                            <a class='menuItem' id = {{ tool.id }} >{{ tool.name }}</a><br>
                             <p class = 'hidden' id = {{ tool.id}}Blurb > {{ tool.blurb }} </p>
                         </div>
                         {% endfor %}
