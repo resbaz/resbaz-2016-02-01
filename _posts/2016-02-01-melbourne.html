@@ -322,7 +322,7 @@ sponsors:
     var listElements = toolList.getElementsByClassName('list-group-item')
     for(var i=0; i<listElements.length; i++){
             listElements[i].children[0].onclick = function(){
-                 console.log(listElements.getElementsByClassName('hidden'))
+                 console.log(tooList.getElementsByClassName('hidden'))
                  idOfBlurb = this.id + 'Blurb'
                  document.getElementById(idOfBlurb).classList.toggle('hidden');
             }
