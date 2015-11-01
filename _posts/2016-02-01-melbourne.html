@@ -322,7 +322,7 @@ sponsors:
     var listElements = toolList.getElementsByClassName('list-group-item')
     for(var i=0; i<listElements.length; i++){
             listElements[i].children[0].onclick = function(){
-                 toolList.getElementsByClassName('hidden').hide();
+                 // toolList.getElementsByClassName('hidden').hide();
                  var idOfBlurb = this.id + 'Blurb';
                  document.getElementById(idOfBlurb).classList.toggle('hidden');
             }
