@@ -537,5 +537,5 @@ header.header-melb{
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    top: -100px;
+    top: 100px;
 }
