@@ -141,7 +141,7 @@ sponsors:
 
 <!-- Menu -->
 <section id='menuSection'>
-    <div class = 'container'>
+    <div class = 'container' id = 'tool-list'>
         <div class = "row">
             <div class = "col-lg-12 text-center">
                 <h1> Menu </h1>
@@ -153,8 +153,9 @@ sponsors:
               <p>{{page.menu}}</p>
             </div>
         </div>
+
             {% for d in page.classes %}
-                <div class = "col-md-6 text-center" id = 'tool-list'>
+                <div class = "col-md-6 text-center">
                     <h4>{{d.class}}</h4>
                     <div class = 'list-group'>
                         {% for tool in d.tools %}
