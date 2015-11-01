@@ -132,10 +132,12 @@ sponsors:
             {% for d in page.classes %}
                 <div class = "col-md-6 text-center">
                     <h4>{{d.class}}</h4>
-                    <div class = 'list-group-item'>
+                    <div class = 'list-group'>
                         {% for tool in d.tools %}
+                        <div class = 'list-group-item'>
                             <a>{{ tool.name }}</a><br>
                             <p class = 'hidden'> {{ tool.blurb }} </p>
+                        </div>
                         {% endfor %}
                     </div>
                 </div>
@@ -163,7 +165,7 @@ sponsors:
                 <div class="col-md-4">
                         <h4>{{ d.day }}</h4>                        
                         <div class='list-group'>
-                        {% for session in d.sessions %}                        
+                        {% for session in d.sessions %}                  
                                 <a class='list-group-item'>{{ session.title }}</a>
                         {% endfor %}
                         </div>                        
