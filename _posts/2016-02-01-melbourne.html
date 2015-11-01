@@ -13,13 +13,16 @@ classes:
    tools:
     - name: MATLAB Data Analysis
       id: mat
-      blurb: MATLAB is a powerful and versatile tool for data acquisition, analysis and visualisation, which is widely used by the research community. In this Software Carpentry workshop, you’ll learn the basics of shell programming, version control, and MATLAB to make data analysis quick and more effective. It covers all steps from reading in data to writing scripts and functions to creating figures that can be shared and published.
+      blurb: MATLAB is a powerful and versatile tool for data acquisition, analysis and visualisation, which is widely used by the research community. In this workshop, you’ll learn the basics of MATLAB for quick and more effective data analysis. It covers all steps from reading in data to writing scripts and functions to creating figures that can be shared and published.
     - name: R Data Analysis
       id: r
-    - name: Python Data Analysis
+      blurb: R is widely used across a range of disciplines for statistical computing and generating publication-quality figures. In this Software Carpentry workshop, you’ll learn the fundamentals of R for data science, Unix Shell for interacting with other programs, as well as version control and useful concepts for scientific computing such as breaking down problems into modular units, reproducibility, tracking changes to code, collaborating with others, and working with structured data.
+    - name: Python (via iPython) Data Analysis
       id: py
+      blurb: This workshop will equip you with the essential skills you need to use Python programming language. It will cover functions, defensive programming, error handling, debugging and unit testing.
     - name: NLTK Natural Language Processing
       id: nltk
+      blurb: Researchers are often confronted with natural language datasets so large that not even teams of researchers would be able to analyse by hand. (Even just reading through the 100 million word British National Corpus, for example, would take around 10,000 hours.) Python's Natural Language Toolkit (NLTK) provides a powerful means of investigating large bodies of text for patterns that may otherwise be very difficult to find. In this workshop, you’ll learn key concepts and practices in Corpus Linguistics/Distant Reading, investigate example datasets and strategies for implementing NLTK within your own research.
     - name: AutoDesk 3D Printing
       id: ad3d
     - name: 3D Slicer 3D Printing
@@ -34,10 +37,21 @@ classes:
    tools:
     - name: Google Forms
     - name: Kobo Toolbox
-    - name: REDCap
-    - name: Galaxy
-    - name: Open Refine
-    - name: AURIN 
+    - name: Pyschopy Pyschology Stimulus Presentation
+    - name: REDCap Clinical Surveys
+    - name: Galaxy Genomics Data Workflows
+    - name: Open Refine Data Cleaning
+    - name: Omeka Image Repositories
+    - name: Latex Documents
+    - name: AURIN Urban Data
+    - name: TinkerCad, Fusion 360, MudBox for 3D Objects
+    - name: Gephi Network Visualization
+    - name: Databases and SQL
+    - name: Nectar High Performance Computing
+    - name: Airtables Data Structures
+    - name: Virtual Machines
+    - name: Data Scraping
+    - name: Reference Management
 schedule: Each day at ResBaz will be split into daytime and evening events. The day will be dedicated to classroom teaching time where we will fill your brains with the latest digital research skills. The evening will be about networking with your fellow cross-disciplinary researchers and having fun. <br><br> During the day classes are broken into three 90 minute sessions, starting at 10.30 am, 1.30 pm and 3 pm. A detailed timetable will be displayed here once sessions are confirmed.<br>
 days:
  - day: Monday February 1
@@ -306,10 +320,9 @@ sponsors:
     // console.log(listElements1)
     var toolList = document.getElementById('tool-list')
     var listElements = toolList.getElementsByClassName('list-group-item')
-    console.log(listElements)
     for(var i=0; i<listElements.length; i++){
             listElements[i].children[0].onclick = function(){
-                 console.log(this.id)
+                 console.log(listElements.getElementsByClassName('hidden'))
                  idOfBlurb = this.id + 'Blurb'
                  document.getElementById(idOfBlurb).classList.toggle('hidden');
             }
