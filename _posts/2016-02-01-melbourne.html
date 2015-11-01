@@ -28,20 +28,25 @@ classes:
     - name: Galaxy
     - name: Open Refine
     - name: AURIN 
-schedule: Each day at ResBaz will be split in half. The first half will be dedicated to classroom teaching time where we will fill your brains with the latest digital research skills. The second half will be about networking with your fellow cross-disciplinary researchers and having fun. 
+schedule: Each day at ResBaz will be split into daytime and evening events. The day will be dedicated to classroom teaching time where we will fill your brains with the latest digital research skills. The evening will be about networking with your fellow cross-disciplinary researchers and having fun. 
 days:
  - day: Monday February 1
    sessions:
     - title: session 1
+      details: 10.30am TBC
     - title: session 2
+      details: 1.30pm TBC
     - title: session 3
+      details: 3pm TBC
     - title: evening
+      details: TBC
  - day: Tuesday February 2
    sessions:
     - title: session 1
     - title: session 2
     - title: session 3
     - title: evening
+      details: NerdNite
  - day: Wednesday February 3
    sessions:
     - title: session 1
@@ -158,6 +163,7 @@ sponsors:
                         <div class='list-group'>
                             {% for session in d.sessions %}
                                 <a class='list-group-item'>{{ session.title }}</a>
+                                <p> {{ session.details }} </p>
                             {% endfor %}
                         </div>
                 </div>
