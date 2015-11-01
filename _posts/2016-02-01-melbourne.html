@@ -308,10 +308,13 @@ sponsors:
     var listElements = toolList.getElementsByClassName('list-group-item')
     console.log(listElements)
     for(var i=0; i<listElements.length; i++){
-            listElements[i].onclick = function(){
-                 idOfBlurb = this.id + 'Blurb'
-                 document.getElementById(idOfBlurb).classList.toggle('hidden');
-            }
+            console.log(listElements[i])
+            console.log(this.id)
+            console.log(this.id+'Blurb')
+            // listElements[i].onclick = function(){
+            //      idOfBlurb = this.id + 'Blurb'
+            //      document.getElementById(idOfBlurb).classList.toggle('hidden');
+            // }
         }
 
 </script>
