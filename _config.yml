@@ -8,7 +8,7 @@ email: your-email@domain.com
 
 # deployment
 baseurl: "/resbaz-2016-02-01" # the subpath of your site, e.g. /blog/
-url: "http://billmills.github.io" # the base hostname & protocol for your site
+url: "http://resbaz.github.io" # the base hostname & protocol for your site
 
 permalink: :permalink/
 
