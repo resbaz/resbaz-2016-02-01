@@ -5,33 +5,56 @@ permalink: melbourne
 location: University of Melbourne
 dates: February 1-3, 2016
 map: sites/melbourne.geojson
-accommodation: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+accommodation: For the 2016 ResBaz Conference there may be some free camping available under the Research Bazaar Bedouin tents on the lawn. You'll need to bring your own sleeping bag, pillow, towel, and earplugs (for the snorers!). Showers will be available in a nearby campus building. Let us know if you're intereseted in camping out at ResBaz 2016 when you fill in your registration form. <br><br> If camping doesn't sound like your style, there are many alternative accommodation options close to the The University of Melbourne. For more information see <a href = "http://services.unimelb.edu.au/housing/moving-to-melbourne/temporary-accommodation" target="_blank">here</a>.
+menu: List of tools on offer at Melbourne ResBaz 2016
+classes:
+ - class: Main Streams
+   tools:
+    - name: MATLAB Data Analysis
+      blurb: MATLAB is a powerful and versatile tool for data acquisition, analysis and visualisation, which is widely used by the research community. In this Software Carpentry workshop, you’ll learn the basics of shell programming, version control, and MATLAB to make data analysis quick and more effective. It covers all steps from reading in data to writing scripts and functions to creating figures that can be shared and published.
+    - name: R Data Analysis
+    - name: Python Data Analysis
+    - name: NLTK Natural Language Processing
+    - name: AutoDesk 3D Printing
+    - name: 3D Slicer 3D Printing
+    - name: HTML and CSS Web Development
+    - name: D3 Data Visualization
+    - name: CartoDB and MapBox Research Maps
+ - class: Minor Electives
+   tools:
+    - name: Google Forms
+    - name: Kobo Toolbox
+    - name: REDCap
+    - name: Galaxy
+    - name: Open Refine
+    - name: AURIN 
+schedule: Each day at ResBaz will be split into daytime and evening events. The day will be dedicated to classroom teaching time where we will fill your brains with the latest digital research skills. The evening will be about networking with your fellow cross-disciplinary researchers and having fun. <br><br> During the day classes are broken into three 90 minute sessions, starting at 10.30 am, 1.30 pm and 3 pm. A detailed timetable will be displayed here once sessions are confirmed.
 days:
- - day: February 1
+ - day: Monday February 1
    sessions:
     - title: session 1
     - title: session 2
     - title: session 3
- - day: February 2
+    - title: evening
+ - day: Tuesday February 2
    sessions:
     - title: session 1
     - title: session 2
     - title: session 3
- - day: February 3
+    - title: evening
+ - day: Wednesday February 3
    sessions:
     - title: session 1
     - title: session 2
     - title: session 3
+    - title: evening
 speakers:
- - name: Dr. Pika
-   img: img/speaker.jpg
-   blurb: xxx
- - name: Dr. Pika
-   img: img/speaker.jpg
-   blurb: xxx
- - name: Dr. Pika
-   img: img/speaker.jpg
-   blurb: xxx
+ - name:
+   img: img/placehold.jpg
+   blurb:
+ - name: TBC
+   img: img/speakerTBC.jpg
+   blurb: Our KeyStory speakers are still to be confirmed - watch this space!
  - name: You!
    img: img/sponsors/fake-sponsor.png
    blurb: We want you to help lead a session; get in touch <a href='#'>here</a>.
@@ -48,15 +71,18 @@ sponsors:
 <nav>
     <div class="container">
 
-        <div class='col-md-9'>
+        <div class='col-md-8'>
             <a href="#page-top">
                 <img class='nav-logo' src='https://raw.githubusercontent.com/BillMills/resbaz-site/gh-pages/img/resbaz_logos/ResBaz_transparent_cropped.png'></img>
             </a>
         </div>
-        <div class='col-md-3'>
+        <div class='col-md-4'>
             <ul class="nav navbar-nav navbar-right nav-list">
                 <li class="hidden">
                     <a href="#page-top"></a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#menuSection">Menu</a>
                 </li>
                 <li class="page-scroll">
                     <a href="#scheduleSection">Schedule</a>
@@ -73,7 +99,7 @@ sponsors:
 </nav>
 
 <!-- Header -->
-<header>
+<header class='header-melb'>
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -88,6 +114,36 @@ sponsors:
     </div>
 </header>
 
+<!-- Menu -->
+<section id='menuSection'>
+    <div class = 'container'>
+        <div class = "row">
+            <div class = "col-lg-12 text-center">
+                <h1> Menu </h1>
+                <hr class = "star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+              <p>{{page.menu}}</p>
+            </div>
+        </div>
+            {% for d in page.classes %}
+                <div class = "col-md-6 text-center">
+                    <h4>{{d.class}}</h4>
+                    <div class = 'list-group'>
+                        {% for tool in d.tools %}
+                            <a>{{ tool.name }}</a><br>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endfor %}
+    </div>
+</section>
+
+
+<hr class='divider'></hr>
+
 <!-- Schedule -->
 <section id='scheduleSection'>
     <div class='container'>
@@ -96,14 +152,19 @@ sponsors:
                 <h1>Schedule</h1>
                 <hr class="star-primary">
             </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+              <p>{{page.schedule}}</p>
+            </div>
+        </div>
             {% for d in page.days %}
                 <div class="col-md-4">
-                        <h4>{{ d.day }}</h4>
+                        <h4>{{ d.day }}</h4>                        
                         <div class='list-group'>
-                            {% for session in d.sessions %}
+                        {% for session in d.sessions %}                        
                                 <a class='list-group-item'>{{ session.title }}</a>
-                            {% endfor %}
-                        </div>
+                        {% endfor %}
+                        </div>                        
                 </div>
             {% endfor %}
         </div>
@@ -147,10 +208,10 @@ sponsors:
             </div>
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="#" class="btn btn-lg btn-outline light-bkg">
+                    <a href="https://docs.google.com/forms/d/1io9-YyETAl9sQ_NkIjehq4juemgnlaXilG17USHvjug/edit" target = "_blank" class="btn btn-lg btn-outline light-bkg">
                         <i class="fa fa-pencil"></i> Pre-Assessment Survey
                     </a>
-                    <a href="#" class="btn btn-lg btn-outline light-bkg">
+                    <a href="https://docs.google.com/forms/d/1FFsIlRjtxXZIcGpJHvCewW6aQMqJNgOuZrfGnk-017E/edit" target="_blank" class="btn btn-lg btn-outline light-bkg">
                         <i class="fa fa-users"></i> Register
                     </a>
                 </div>  
@@ -203,7 +264,7 @@ sponsors:
 <hr class='divider'></hr>
 
 <!-- Sponsors -->
-<section id="sponsors">
+<!-- <section id="sponsors">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -223,4 +284,4 @@ sponsors:
           </div>
         </div>
     </div>
-</section>
+</section> -->
