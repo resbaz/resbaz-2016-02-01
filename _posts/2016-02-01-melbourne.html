@@ -32,27 +32,22 @@ schedule: Each day at ResBaz will be split into daytime and evening events. The 
 days:
  - day: Monday February 1
    sessions:
-    - title: Session 1 (10.30 am)
-      details: TBC
-    - title: Session 2 (1:30 pm)
-      details: TBC
-    - title: Session 3 (3 pm)
-      details: TBC
-    - title: Evening
-      details: TBC
+    - title: session 1
+    - title: session 2
+    - title: session 3
+    - title: evening
  - day: Tuesday February 2
    sessions:
-    - title: 
-    - title: 
-    - title: 
-    - title: 
-      details: NerdNite
+    - title: session 1
+    - title: session 2
+    - title: session 3
+    - title: evening
  - day: Wednesday February 3
    sessions:
-    - title: 
-    - title: 
-    - title: 
-    - title: 
+    - title: session 1
+    - title: session 2
+    - title: session 3
+    - title: evening
 speakers:
  - name:
    img: img/placehold.jpg
@@ -157,6 +152,11 @@ sponsors:
                 <h1>Schedule</h1>
                 <hr class="star-primary">
             </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+              <p>{{page.schedule}}</p>
+            </div>
+        </div>
             {% for d in page.days %}
                 <div class="col-md-4">
                         <h4>{{ d.day }}</h4>
