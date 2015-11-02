@@ -460,7 +460,7 @@ footer .footer-below {
     opacity: 0;
 }
 
-/*Bill's Hacks*/
+/*Custom*/
 
 .lead-image{
     max-width: 50%;
@@ -536,4 +536,12 @@ ul.nav-list li a:hover{
         padding-top: 150px;
     }
 
+}
+
+.list-group-item.hidden{
+  display: none;
+}
+
+.menuItem{
+    cursor: pointer;
 }

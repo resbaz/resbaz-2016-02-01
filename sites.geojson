@@ -23,6 +23,18 @@
                 "marker-color": "#2b3990",
                 "details": "<a href='http://resbaz.github.io/resbaz-2016-02-01/auckland'>Auckland</a>"
             }
+        },
+
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":[115.6613312, -31.9577956]
+            },
+            "properties": {
+                "marker-color": "#2b3990",
+                "details": "<a href='http://resbaz.github.io/resbaz-2016-02-01/perth'>Perth</a>"
+            }
         }
     ]
 }
