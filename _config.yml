@@ -7,7 +7,7 @@ email: your-email@domain.com
 #url: "http://yourdomain.com" # the base hostname & protocol for your site
 
 # deployment
-baseurl: "/" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://2016-02-01.resbaz.com" # the base hostname & protocol for your site
 
 permalink: :permalink/
