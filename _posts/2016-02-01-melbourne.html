@@ -6,7 +6,7 @@ location: University of Melbourne
 dates: February 1-3, 2016
 splashImage: https://farm1.staticflickr.com/681/22032155473_bca28567d4_z.jpg
 map: sites/melbourne.geojson
-registration: The registration process for Research Bazaar conference consisted of 6 simple steps
+registration: The registration process for the Research Bazaar conference in Melbourne is outlined below
 regsteps:
   - step: Fill out the ResBaz 2016 Global Pre-Assessment survey 
   - step: Fill in the ResBaz Melbourne registration form
@@ -30,7 +30,8 @@ regschedule:
     name: ResBaz
 accommodation1: For the 2016 ResBaz Conference there may be some free camping available under the Research Bazaar Bedouin tents on the lawn. You'll need to bring your own sleeping bag, pillow, towel, and earplugs (for the snorers!). Showers will be available in a nearby campus building. Let us know if you're intereseted in camping out at ResBaz 2016 when you fill in your <a href = "#registerSection">registration form</a>.
 accommodation2: If camping doesn't sound like your style, there are many alternative accommodation options close to the The University of Melbourne. For more information see <a href = "http://services.unimelb.edu.au/housing/moving-to-melbourne/temporary-accommodation" target="_blank">here</a>.
-menu: Thanks to our ever-growing <a href="http://resbaz.github.io/ResBaz-Community/" target="_blank">ResBaz community</a> there are some amazing tools on offer at Melbourne ResBaz 2016. You can <a href="#registerSection">register</a> your interest to attend a class in any or all of the topics below.. <br><br>If you think you've got what it takes to volunteer as a helper or trainer in one of these tools we'd love to hear from you! Please sign up <a href="https://www.eventbrite.com.au/e/resbaz-helpers-and-trainers-sign-up-tickets-19437129979" target="_blank">here</a> to be a helper or trainer (you'll also get a guaranteed spot at ResBaz, free t-shirts and our eternal gratitude). <br><br> In line with ResBaz 2016, we are also offering accreditation courses for Software Carpenty / Data Carpentry instructors. This course will run 21 - 22 Jan. If you're interested in being accredited please fill out <a href="http://go.unimelb.edu.au/7cra", target="_blank">this form</a> - we'll be in touch!
+menu: There are some amazing tools on offer at Melbourne ResBaz 2016. If these sound perfect for you - sign up <a href="#registerSection">here</a>. You can also meet our team of ResBaz instructors<a href="http://resbaz.github.io/ResBaz-Community/" target="_blank">here</a>!
+trainers: If you think you've got what it takes to volunteer as a helper or trainer in one of these tools we'd love to hear from you! Please sign up <a href="https://www.eventbrite.com.au/e/resbaz-helpers-and-trainers-sign-up-tickets-19437129979" target="_blank">here</a> to be a helper or trainer (you'll also get a guaranteed spot at ResBaz, free t-shirts and our eternal gratitude). <br><br> In line with ResBaz 2016, we are also offering accreditation courses for Software Carpenty / Data Carpentry instructors. This course will run 21 - 22 Jan. If you're interested in being accredited please fill out <a href="http://go.unimelb.edu.au/7cra", target="_blank">this form</a> - we'll be in touch!
 classes:
  - class: Main Streams
    tools:
@@ -61,14 +62,14 @@ classes:
     - name: CartoDB and TileMill (MapBox) Research Maps
       id: map
       blurb: CartoDB is a simple yet powerful tool that lets you visualise data onto maps. You’ll learn how to format data to make a map visualisation. We’ll explore the range of inbuilt features that CartoDB offers and how to start customising these tools to produce a map that communicates your research data through a narrative.<br>TileMill lets you create customised maps to display your research. In this workshop, you’ll learn about the art of cartography and the types of data that you can access and use in TileMill. We’ll introduce you to CartoCSS, so you can customise the appearance of your map and control the level of detail that appears and create a map that you’ll be proud to publish. CartoDB is recommended but not required for attending this workshop.
- - class: Minor Electives
+ - class: Minor Streams
    tools:
     - name: Data Collection
       id: daco
       blurb: Electives include -<br><a href="http://www.psychopy.org/screenshots.html" target="_blank">Psychopy</a> for the presentation of stimuli and collection of data for a wide range of neuroscience, psychology and psychophysics experiments.<br>REDCap for medical/clinical surveys<br>AURIN for urban data
-    - name: Data Mining
+    - name: Data Acquistion and Cleaning
       id: dami
-      blurb: Electives include -<br>Google forms<br>Kobo Toolbox for mobile data<br>Open refine for data cleaning<br>Social media and internet data mining<br>Research impact analysis
+      blurb: This stream will talk about how to get data using survey tools such as Google Forms (a free, web based tool created by Google to do web survey) and mobile data collection tools using Kobo Toolbox (a free web based and mobile based tool to do mobile data collection). <br>Following that, the stream will continue in using Open Refine (a free open source tool that can handle large amount of messy data) to clean up your messy data.
     - name: Research Skills
       id: res
       blurb: Electives include -<br>Latex for scientific documents<br>Academic reference management<br>Social media for research engagement
@@ -195,6 +196,13 @@ sponsors:
                     </div>
                 </div>
             {% endfor %}
+
+        <div class="row">
+            <div class="col-lg-12 text-center">
+              <p>{{page.trainers}}</p>
+            </div>
+        </div>
+
     </div>
 </section>
 
@@ -276,7 +284,7 @@ sponsors:
             </div>
 
             <div class="col-md-6 text-center">
-                <h4> Steps </h4>    
+                <h4> How to Register </h4>    
                 <div class='list-group'>
                 {% for d in page.regsteps %}                  
                 <a class='list-group-item text-left'>{{ d.step }}</a>
@@ -286,7 +294,7 @@ sponsors:
             </div>
 
             <div class="col-md-6 text-center">
-                  <h4> Milestones </h4>    
+                  <h4> Deadlines </h4>    
                   <div class = 'list-group'>
                     {% for d in page.regschedule %}
                     <li class = 'list-group-item text-left'> <b> {{ d.date}} </b> 
@@ -295,15 +303,11 @@ sponsors:
 
                     {% endfor %}
                   </div>
-
-
             </div>
-
-
 
     </div>
 
-    <div class = "row">
+    <div class = "row text-center">
         <h4> Still confused? </h4> 
         <img src="https://raw.githubusercontent.com/resbaz/cookbook/master/images/ResBaz_ResConf_Registration_Process.png"> </img>
     </div>
