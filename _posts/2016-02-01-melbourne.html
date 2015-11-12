@@ -258,26 +258,27 @@ sponsors:
         </div>
 
 
-
         <div class="row">
 
-          <p> {{page.registration}} </p> 
+            <div class="col-lg-12 text-center">
+              <p>{{page.registration}}</p>
+            </div>
 
-            <div class="col-lg-4">
+            <div class="col-md-6 text-center">
                 <h4> Steps </h4>    
                 <div class='list-group'>
                 {% for d in page.regsteps %}                  
-                <a class='list-group-item'>{{ d.step }}</a>
+                <a class='list-group-item text-left'>{{ d.step }}</a>
                 {% endfor %}
                 </div>  
 
             </div>
 
-            <div class="col-lg-4">
+            <div class="col-md-6 text-center">
                   <h4> Milestones </h4>    
                   <div class = 'list-group'>
                     {% for d in page.regschedule %}
-                    <li class = 'list-group-item'> <b> {{ d.date}} </b> 
+                    <li class = 'list-group-item text-left'> <b> {{ d.date}} </b> 
                       {{ d.name }}
                     </li>
 
