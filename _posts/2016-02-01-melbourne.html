@@ -261,10 +261,10 @@ sponsors:
 
         <div class="row">
 
-            <div class="col-lg-4">
+          <p> {{page.registration}} </p> 
 
-                <p> {{page.registration}} </p>      
-                    
+            <div class="col-lg-4">
+                <h4> Steps </h4>    
                 <div class='list-group'>
                 {% for d in page.regsteps %}                  
                 <a class='list-group-item'>{{ d.step }}</a>
@@ -274,19 +274,18 @@ sponsors:
             </div>
 
             <div class="col-lg-4">
-
+                  <h4> Milestones </h4>    
                   <div class = 'list-group'>
                     {% for d in page.regschedule %}
-                    <li class = 'list-group-item'> <b> {{ d.date}} </b> </li>
+                    <li class = 'list-group-item'> <b> {{ d.date}} </b> 
+                      {{ d.name }}
+                    </li>
+
                     {% endfor %}
                   </div>
 
 
             </div>
-
-           <div class = "row">
-             <img src="https://raw.githubusercontent.com/resbaz/cookbook/master/images/ResBaz_ResConf_Registration_Process.png"> </img>
-           </div>
 
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -299,6 +298,11 @@ sponsors:
                 </div>  
             </div>
 
+    </div>
+
+    <div class = "row">
+        <h4> Still confused? </h4> 
+        <img src="https://raw.githubusercontent.com/resbaz/cookbook/master/images/ResBaz_ResConf_Registration_Process.png"> </img>
     </div>
 
 </section>
