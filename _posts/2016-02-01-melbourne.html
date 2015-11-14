@@ -280,6 +280,7 @@ sponsors:
             </div>
 
             <div class="col-lg-12 text-center">
+              <l></l>
               <p>{{page.registration}}</p>
             </div>
 
@@ -308,8 +309,9 @@ sponsors:
     </div>
 
     <div class = "row text-center">
-        <h4> Still confused? </h4> 
-        <img src="https://raw.githubusercontent.com/resbaz/cookbook/master/images/ResBaz_ResConf_Registration_Process.png"> </img>
+        <h4> Still confused? </h4>
+        <p>Maybe you need a <a>flowchart..</a></p>
+        <img src="https://raw.githubusercontent.com/resbaz/cookbook/master/images/ResBaz_ResConf_Registration_Process.png" class = 'hidden'> </img>
     </div>
 
 </section>
@@ -384,15 +386,12 @@ sponsors:
 </section> -->
 
 
-<!-- TEST SCRIPT -->
+<!-- RUNS THE CLICKABLE CONTENT ON THIS PAGE -->
 <script> 
-    // var listElements1 = document.getElementsByClassName('list-group-item')
-    // console.log(listElements1)
     var toolList = document.getElementById('tool-list')
     var listElements = toolList.getElementsByClassName('list-group-item')
     for(var i=0; i<listElements.length; i++){
             listElements[i].children[0].onclick = function(){
-                 // toolList.getElementsByClassName('hidden').hide();
                  var idOfBlurb = this.id + 'Blurb';
                  document.getElementById(idOfBlurb).classList.toggle('hidden');
             }
