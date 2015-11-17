@@ -2,17 +2,15 @@
 layout: site
 permalink: auckland
 
-location: Template
+location: University of Auckland
 
-dates: February 1-3, 2016
+dates: February 2-4, 2016
 
-splashImage: https://farm1.staticflickr.com/681/22032155473_bca28567d4_z.jpg
+splashImage: https://dl.dropboxusercontent.com/u/28869791/5292847394_e111c2e2a7_b.jpg
 
-map: sites/perth.geojson
+map: sites/auckland.geojson
 
-accommodation: Your accommodation text.
-
-menu: Your Menu text.
+menu: Hi there
 
 classes:
  - class: Main Streams
@@ -69,13 +67,17 @@ speakers:
  - name: You!
    img: img/sponsors/fake-sponsor.png
    blurb: We want you to help lead a session; let us know if you're interested when you <a href="#registerSection">register</a>.
+
 sponsors:
- - name: 'Sponsor Number One'
+ - name: 'Center for eResearch'
    img: fake-sponsor.png
- - name: 'Sponsor Number Two'
+   link: 'http://www.eresearch.auckland.ac.nz/en/centre-for-eresearch.html'
+ - name: 'Faculty of Science'
    img: fake-sponsor.png
- - name: 'Sponsor Number Three'
-   img: fake-sponsor.png
+   link: 'http://www.science.auckland.ac.nz/en.html'
+ - name: 'NeSI'
+   img: 'fake-sponsor.png'
+   link: 'https://www.nesi.org.nz/'
 ---
 
 <!-- Navigation -->
@@ -93,7 +95,7 @@ sponsors:
                     <a href="#page-top"></a>
                 </li>
                 <li class="page-scroll">
-                    <a href="#menuSection">Menu</a>
+                    <a href="#menuSection">About</a>
                 </li>
                 <li class="page-scroll">
                     <a href="#scheduleSection">Schedule</a>
@@ -130,7 +132,7 @@ sponsors:
     <div class = 'container' id = 'tool-list'>
         <div class = "row">
             <div class = "col-lg-12 text-center">
-                <h1> Menu </h1>
+                <h1> About </h1>
                 <hr class = "star-primary">
             </div>
         </div>
@@ -226,7 +228,7 @@ sponsors:
                     <a href="https://docs.google.com/forms/d/1io9-YyETAl9sQ_NkIjehq4juemgnlaXilG17USHvjug/edit" target = "_blank" class="btn btn-lg btn-outline light-bkg">
                         <i class="fa fa-pencil"></i> Pre-Assessment Survey
                     </a>
-                    <a href="https://docs.google.com/forms/d/1FFsIlRjtxXZIcGpJHvCewW6aQMqJNgOuZrfGnk-017E/edit" target="_blank" class="btn btn-lg btn-outline light-bkg">
+                    <a href="https://docs.google.com/forms/d/1e6HPoE1UsVPSOvctgkcCs_qMTuCU92qiFcG9EhCyuAk/viewform" target="_blank" class="btn btn-lg btn-outline light-bkg">
                         <i class="fa fa-users"></i> Register
                     </a>
                 </div>  
@@ -259,8 +261,9 @@ sponsors:
 
 <hr class='divider'></hr>
 
+
 <!-- Accommodation -->
-<section id="acommodation">
+<!-- <section id="acommodation">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -274,12 +277,11 @@ sponsors:
           </div>
         </div>
     </div>
-</section>
-
-<hr class='divider'></hr>
+</section> 
+<hr class='divider'></hr> -->
 
 <!-- Sponsors -->
-<!-- <section id="sponsors">
+<section id="sponsors">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -292,14 +294,15 @@ sponsors:
               <p>Many thanks to all our sponsors for helping bring the Resarch Bazaar to the {{page.location}}.</p>
               {% for sponsor in page.sponsors %}
                   <div class='sponsor-tile'>
-                      <img src={{site.baseurl}}/img/sponsors/{{ sponsor.img }}></img>
-                      <h4>{{ sponsor.name }}</h4>
+                      <img src={{site.baseurl}}/img/sponsors/{{ sponsor.img }}></img> 
+                      <!--<img src={{ sponsor.img }}></img> -->
+                      <a href={{ sponsor.link }}> <h4>{{ sponsor.name }}</h4> </a>
                   </div>
               {% endfor %}
           </div>
         </div>
     </div>
-</section> -->
+</section> 
 
 
 <!-- TEST SCRIPT -->
