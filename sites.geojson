@@ -35,6 +35,18 @@
                 "marker-color": "#2b3990",
                 "details": "<a href='https://2016-02-01.resbaz.com/perth/'>Perth</a>"
             }
+        },
+
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":[170.4570789,-45.8726724]
+            },
+            "properties": {
+                "marker-color": "#2b3990",
+                "details": "<a href='https://2016-02-01.resbaz.com/dunedin/'>Dunedin</a>"
+            }
         }
     ]
 }
