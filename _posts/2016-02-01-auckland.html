@@ -2,7 +2,7 @@
 layout: site
 permalink: auckland
 
-location: University of Auckland
+location: Auckland
 
 dates: February 2-4, 2016
 
@@ -10,11 +10,10 @@ splashImage: https://dl.dropboxusercontent.com/u/28869791/5292847394_e111c2e2a7_
 
 map: sites/auckland.geojson
 
-menu: The Research Bazaar is a (free-of-charge) 3-day intensive conference where researchers come together to up-skill in ‘next generation digital research tools and skills’.<br><br> In the spirit of a marketplace or bazaar, ResBaz is a highly participatory event where researchers from many different disciplines can come together to learn, share knowledge and skills, and have fun! <br><br> We are still working on the programme - below are just some of the sessions that will be on offer.
- 
+menu: The Research Bazaar is a (free-of-charge) 3-day intensive conference where researchers come together to up-skill in ‘next generation digital research tools and skills’. In the spirit of a marketplace or bazaar, ResBaz is a highly participatory event where researchers from many different disciplines can learn, share knowledge and skills, and have fun!<br><br> Who should attend? Researchers at ALL levels from ALL disciplines. PhD and research Masters students are especially encouraged to apply. Research technologists who support researchers to do their job should also come along! <br><br> NOTE! The Auckland event is being held <strong>2-4 Feb</strong> due to a public holiday, not 1-3 Feb as elsewhere in the world.<br><br> We are still working on the programme to bring you a broad range of digital research skills topics but you should <a href='#registerSection'>register</a> now to avoid missing out. Below are just some of the sessions that will be on offer. <br><br> 
 
 classes:
- - class: Main Streams
+ - class: Main Streams - Software Carpentry
    tools:
     - name: The Unix Shell
       id: id1
@@ -35,26 +34,38 @@ classes:
       blurb: Learn about data management planning, and tools and tips for organising and working with scientific data.
     - name: Statistical Programming with R
       id: ido
-      blurb: An introduction to R Studio, and using R to analyse your data.
+      blurb: An introduction to R Studio, using R to analyse your data.
+    - name: The Future of Research
+      id: id9
+      blurb: The landscape and challenges of digital research practice.
+    - name: Beyond the Ivory Tower
+      id: id8
+      blurb: Tales from the other side.
+    - name: SWC Applied
+      id: id7
+      blurb: A session to catch-up and begin applying Software Carpentry skills to your own projects immediately.
+    - name: Copyright and Licensing
+      id: id6
+      blurb: Everything you need to know about licences and research objects.
 
-schedule: Each day at ResBaz will be split into morning and afternoon events. Following a Key Story from one of our exciting speakers, the mornings will consists of <a href='https://software-carpentry.org/'>Software Carpentry</a> lessons. Afternoon sessions will be more informal, with plenty of opportunites for <strong>you</strong> to decide parts of the programme, along with fun social and networking activities. <br><br>A more detailed timetable will be displayed once more sessions are confirmed.
+schedule: Each day at ResBaz will be split into morning and afternoon events. Following a Key Story from one of our exciting speakers, the mornings will consists of <a href='https://software-carpentry.org/'>Software Carpentry</a> lessons. Afternoon sessions will be more informal, with plenty of opportunites for <strong>you</strong> to decide parts of the programme, along with fun social and networking activities. <br><br>A more detailed timetable will be displayed once more sessions are confirmed.<br><br>
 
 days:
  - day: Tuesday February 2
    sessions:
     - title: Welcome and Key Story
-    - title: Unix Shell
+    - title: Unix Shell (Software Carpentry)
     - title: Unconference session planning
  - day: Wednesday February 3
    sessions:
     - title: Key Story 2
-    - title: Python
+    - title: Python (Software Carpentry)
     - title: Unconference Sessions
     - title: Evening social event
  - day: Thursday February 4
    sessions:
     - title: Key Story 3
-    - title: Version Control with Git
+    - title: Version Control with Git (Software Carpentry)
     - title: Unconference Sessions
 
 
@@ -70,13 +81,13 @@ speakers:
    blurb: We want you to help lead a session; let us know if you're interested when you <a href="#registerSection">register</a>.
 
 sponsors:
- - name: 'Center for eResearch'
+ - name: 'University of Auckland Center for eResearch'
    img: fake-sponsor.png
    link: 'http://www.eresearch.auckland.ac.nz/en/centre-for-eresearch.html'
- - name: 'Faculty of Science'
+ - name: 'University of Auckland Faculty of Science'
    img: fake-sponsor.png
    link: 'http://www.science.auckland.ac.nz/en.html'
- - name: 'NeSI'
+ - name: 'New Zealand eScience Infrastructure'
    img: 'fake-sponsor.png'
    link: 'https://www.nesi.org.nz/'
 ---
@@ -201,7 +212,7 @@ sponsors:
                 </div>
 
             <div class="col-lg-8 col-lg-offset-2 text-center">
-                <p>The Auckland ResBaz will be located in and around the Owen G Glenn building.</p>
+                <p>The Auckland ResBaz will be located in and around the fabulous Owen G Glenn building.</p>
                 <script src="https://embed.github.com/view/geojson/resbaz/resbaz-2016-02-01/gh-pages/{{page.map}}"></script>
             </div>
         </div>
@@ -221,10 +232,10 @@ sponsors:
         </div>
         <div class="row">
             <div class="col-lg-4 col-lg-offset-2">
-                <p>Register here for the {{page.location}} Research Bazaar.</p>
+                <p>Register here for the {{page.location}} Research Bazaar.<br><br>The registration process involves two steps.</p>
             </div>
             <div class="col-lg-4">
-                <p>The registration process involves two steps. Start with the Pre-Assessment Survey, so that we can create the best possible experience for you. Then use the promo code given to you at the end of the survey to complete the local registration form for the Auckland event.</p>
+                <p>Start with the Pre-Assessment Survey, so that we can create the best possible experience for you. Then use the promo code given to you at the end of the survey to complete the local registration form for the Auckland event.</p>
             </div>
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -302,7 +313,7 @@ sponsors:
                       <a href={{ sponsor.link }}> <h4>{{ sponsor.name }}</h4> </a>
                   </div>
               {% endfor %}
-              <p style="margin: auto;">Splash image CC-BY-NC <a href='https://www.flickr.com/photos/eightson/'>eightson</a></p>
+              <p style="margin: auto;"><small>Splash image CC-BY-NC <a href='https://www.flickr.com/photos/eightson/'>eightson</a>.<small></p>
           </div>
         </div>
 
