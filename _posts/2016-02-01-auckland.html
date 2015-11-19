@@ -2,63 +2,73 @@
 layout: site
 permalink: auckland
 
-location: Template
+location: Auckland
 
-dates: February 1-3, 2016
+dates: February 2-4, 2016
 
-splashImage: https://farm1.staticflickr.com/681/22032155473_bca28567d4_z.jpg
+splashImage: https://dl.dropboxusercontent.com/u/28869791/5292847394_e111c2e2a7_b.jpg
 
-map: sites/perth.geojson
+map: sites/auckland.geojson
 
-accommodation: Your accommodation text.
-
-menu: Your Menu text.
+menu: The Research Bazaar is a (free-of-charge) 3-day intensive conference where researchers come together to up-skill in ‘next generation digital research tools and skills’. In the spirit of a marketplace or bazaar, ResBaz is a highly participatory event where researchers from many different disciplines can learn, share knowledge and skills, and have fun!<br><br> Who should attend? Researchers at ALL levels from ALL disciplines. PhD and research Masters students are especially encouraged to apply. Research technologists who support researchers to do their job should also come along! <br><br> NOTE! The Auckland event is being held <strong>2-4 Feb</strong> due to a public holiday, not 1-3 Feb as elsewhere in the world.<br><br> We are still working on the programme to bring you a broad range of digital research skills topics but you should <a href='#registerSection'>register</a> now to avoid missing out. Below are just some of the sessions that will be on offer. <br><br> 
 
 classes:
- - class: Main Streams
+ - class: Main Streams - Software Carpentry
    tools:
-    - name: tool1
+    - name: The Unix Shell
       id: id1
-      blurb: Description of tool # 1.
-    - name: tool2
+      blurb: Use of the shell is fundamental to using a wide range of other powerful tools and computing resources (including “high-performance computing” supercomputers). These lessons will start you on a path towards using these resources effectively.
+    - name: Python
       id: id2
-      blurb: Description of tool # 2.
-    - name: tooln
+      blurb: Python is a powerful, general purpose programming language that has several popular scientific libraries that make it ideal for research. This workshop will equip you with the essential skills you need to use the Python programming language. 
+    - name: Git
       id: idn
-      blurb: Description of tool # n.
-
- - class: Minor Electives
+      blurb: Version control is the lab notebook of the digital world - it’s what professionals use to keep track of what they’ve done and to collaborate with other people. Keeping a record of what was changed, when, and why is extremely useful for all researchers if they ever need to come back to the project later on.
+ - class: Additional Sessions
    tools:
-    - name: tool1
-      id: id1
-      blurb: Description of tool # 1.
-    - name: tool2
-      id: id2
-      blurb: Description of tool # 2.
-    - name: tooln
-      id: idn
-      blurb: Description of tool # n.
+    - name: Intro to HPC
+      id: id3
+      blurb: Need a bigger computer to do your research? Find out about High Performance Computing and how you can access it.
+    - name: Data Tools and Management
+      id: id4
+      blurb: Learn about data management planning, and tools and tips for organising and working with scientific data.
+    - name: Statistical Programming with R
+      id: ido
+      blurb: An introduction to R Studio, using R to analyse your data.
+    - name: The Future of Research
+      id: id9
+      blurb: The landscape and challenges of digital research practice.
+    - name: Beyond the Ivory Tower
+      id: id8
+      blurb: Tales from the other side.
+    - name: SWC Applied
+      id: id7
+      blurb: A session to catch-up and begin applying Software Carpentry skills to your own projects immediately.
+    - name: Copyright and Licensing
+      id: id6
+      blurb: Everything you need to know about licences and research objects.
 
-schedule: Your schedule description.
+schedule: Each day at ResBaz will be split into morning and afternoon events. Following a Key Story from one of our exciting speakers, the mornings will consists of <a href='https://software-carpentry.org/'>Software Carpentry</a> lessons. Afternoon sessions will be more informal, with plenty of opportunites for <strong>you</strong> to decide parts of the programme, along with fun social and networking activities. <br><br>A more detailed timetable will be displayed once more sessions are confirmed.<br><br>
+
 days:
- - day: Monday February 1
-   sessions:
-    - title: session 1
-    - title: session 2
-    - title: session 3
-    - title: evening
  - day: Tuesday February 2
    sessions:
-    - title: session 1
-    - title: session 2
-    - title: session 3
-    - title: evening
+    - title: Welcome and Key Story
+    - title: Unix Shell (Software Carpentry)
+    - title: Unconference session planning
  - day: Wednesday February 3
    sessions:
-    - title: session 1
-    - title: session 2
-    - title: session 3
-    - title: evening
+    - title: Key Story 2
+    - title: Python (Software Carpentry)
+    - title: Unconference Sessions
+    - title: Evening social event
+ - day: Thursday February 4
+   sessions:
+    - title: Key Story 3
+    - title: Version Control with Git (Software Carpentry)
+    - title: Unconference Sessions
+
+
 speakers:
  - name:
    img: img/placehold.jpg
@@ -69,13 +79,17 @@ speakers:
  - name: You!
    img: img/sponsors/fake-sponsor.png
    blurb: We want you to help lead a session; let us know if you're interested when you <a href="#registerSection">register</a>.
+
 sponsors:
- - name: 'Sponsor Number One'
+ - name: 'University of Auckland Center for eResearch'
    img: fake-sponsor.png
- - name: 'Sponsor Number Two'
+   link: 'http://www.eresearch.auckland.ac.nz/en/centre-for-eresearch.html'
+ - name: 'University of Auckland Faculty of Science'
    img: fake-sponsor.png
- - name: 'Sponsor Number Three'
-   img: fake-sponsor.png
+   link: 'http://www.science.auckland.ac.nz/en.html'
+ - name: 'New Zealand eScience Infrastructure'
+   img: 'fake-sponsor.png'
+   link: 'https://www.nesi.org.nz/'
 ---
 
 <!-- Navigation -->
@@ -93,7 +107,7 @@ sponsors:
                     <a href="#page-top"></a>
                 </li>
                 <li class="page-scroll">
-                    <a href="#menuSection">Menu</a>
+                    <a href="#menuSection">About</a>
                 </li>
                 <li class="page-scroll">
                     <a href="#scheduleSection">Schedule</a>
@@ -130,7 +144,7 @@ sponsors:
     <div class = 'container' id = 'tool-list'>
         <div class = "row">
             <div class = "col-lg-12 text-center">
-                <h1> Menu </h1>
+                <h1> About </h1>
                 <hr class = "star-primary">
             </div>
         </div>
@@ -196,7 +210,9 @@ sponsors:
                     <h1>Venue</h1>
                     <hr class="star-primary">
                 </div>
+
             <div class="col-lg-8 col-lg-offset-2 text-center">
+                <p>The Auckland ResBaz will be located in and around the fabulous Owen G Glenn building.</p>
                 <script src="https://embed.github.com/view/geojson/resbaz/resbaz-2016-02-01/gh-pages/{{page.map}}"></script>
             </div>
         </div>
@@ -216,17 +232,17 @@ sponsors:
         </div>
         <div class="row">
             <div class="col-lg-4 col-lg-offset-2">
-                <p>Register here for the {{page.location}} Research Bazaar.</p>
+                <p>Register here for the {{page.location}} Research Bazaar.<br><br>The registration process involves two steps.</p>
             </div>
             <div class="col-lg-4">
-                <p>The registration process starts with a Pre-Assessment Survey, so that we can create the best possible experience for you. Use the promo code given to you at the end of the survey to complete the registration form.</p>
+                <p>Start with the Pre-Assessment Survey, so that we can create the best possible experience for you. Then use the promo code given to you at the end of the survey to complete the local registration form for the Auckland event.</p>
             </div>
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <a href="https://docs.google.com/forms/d/1io9-YyETAl9sQ_NkIjehq4juemgnlaXilG17USHvjug/edit" target = "_blank" class="btn btn-lg btn-outline light-bkg">
                         <i class="fa fa-pencil"></i> Pre-Assessment Survey
                     </a>
-                    <a href="https://docs.google.com/forms/d/1FFsIlRjtxXZIcGpJHvCewW6aQMqJNgOuZrfGnk-017E/edit" target="_blank" class="btn btn-lg btn-outline light-bkg">
+                    <a href="https://docs.google.com/forms/d/1e6HPoE1UsVPSOvctgkcCs_qMTuCU92qiFcG9EhCyuAk/viewform" target="_blank" class="btn btn-lg btn-outline light-bkg">
                         <i class="fa fa-users"></i> Register
                     </a>
                 </div>  
@@ -259,8 +275,9 @@ sponsors:
 
 <hr class='divider'></hr>
 
+
 <!-- Accommodation -->
-<section id="acommodation">
+<!-- <section id="acommodation">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -274,12 +291,11 @@ sponsors:
           </div>
         </div>
     </div>
-</section>
-
-<hr class='divider'></hr>
+</section> 
+<hr class='divider'></hr> -->
 
 <!-- Sponsors -->
-<!-- <section id="sponsors">
+<section id="sponsors">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -292,14 +308,17 @@ sponsors:
               <p>Many thanks to all our sponsors for helping bring the Resarch Bazaar to the {{page.location}}.</p>
               {% for sponsor in page.sponsors %}
                   <div class='sponsor-tile'>
-                      <img src={{site.baseurl}}/img/sponsors/{{ sponsor.img }}></img>
-                      <h4>{{ sponsor.name }}</h4>
+                      <img src={{site.baseurl}}/img/sponsors/{{ sponsor.img }}></img> 
+                      <!--<img src={{ sponsor.img }}></img> -->
+                      <a href={{ sponsor.link }}> <h4>{{ sponsor.name }}</h4> </a>
                   </div>
               {% endfor %}
+              <p style="margin: auto;"><small>Splash image CC-BY-NC <a href='https://www.flickr.com/photos/eightson/'>eightson</a>.<small></p>
           </div>
         </div>
+
     </div>
-</section> -->
+</section> 
 
 
 <!-- TEST SCRIPT -->
