@@ -5,23 +5,11 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates":[174.7691073,-36.8523378] 
+                "coordinates":[174.771265, -36.853083] 
             },
             "properties": {
                 "marker-color": "#2b3990",
-                "details": "Bookstore"
-            }
-        },
-
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates":[174.7691073,-36.8523378] 
-            },
-            "properties": {
-                "marker-color": "#2b3990",
-                "details": "Library"
+                "details": "Owen G Glenn Bldg."
             }
         }
     ]
