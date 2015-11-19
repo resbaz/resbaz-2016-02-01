@@ -1,0 +1,16 @@
+{
+    "type": "FeatureCollection",
+    "features": [    
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":[170.520855, -45.868072] 
+            },
+            "properties": {
+                "marker-color": "#2b3990",
+                "details": "University of Otago College of Education, Tower Black, 155 Union St E"
+            }
+        }
+    ]
+}
