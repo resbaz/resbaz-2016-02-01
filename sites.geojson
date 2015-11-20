@@ -59,6 +59,18 @@
                 "marker-color": "#2b3990",
                 "details": "<a href='https://2016-02-01.resbaz.com/brisbane/'>Brisbane</a>"
             }
+        },
+
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":[151.19025,-33.88765]
+            },
+            "properties": {
+                "marker-color": "#2b3990",
+                "details": "<a href='https://2016-02-01.resbaz.com/sydney/'>Sydney</a>"
+            }
         }
     ]
 }
