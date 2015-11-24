@@ -101,8 +101,11 @@ days:
       id: KS1
       blurb: Fiona Tweedie
     - title: 9.30am Training sesion 1
+      id:
     - title: 11am Morning tea
+      id:
     - title: 11.30am Training session 2
+      id:
     - title: 1pm Lunch
     - title: 2pm Training session 3
     - title: 3.30pm Afternoon tea
@@ -251,7 +254,7 @@ sponsors:
                         <div class='list-group'>
                         {% for session in d.sessions %}                  
                         <div class = 'list-group-item text-left'>
-                            <a class='menuItem' id = {{ session.id }} >{{ session.name }}</a><br>
+                            <a class='menuItem' id = {{ session.id }} >{{ session.title}}</a><br>
                             <!-- <p class = 'hidden' id = {{ session.id}}Blurb > {{ session.blurb }} </p> -->
                         </div>
                         {% endfor %}
@@ -428,7 +431,7 @@ sponsors:
     var sessionList = document.getElementById('session-list')
     console.log(sessionList)
     var sessionListElements = sessionList.getElementsByClassName('list-group-item')
-    console.log(sessionLisElements)
+    console.log(sessionListElements)
     for(var i=0; i<sessionListElements.length; i++){
             console.log(sessionListElements[i])
             sessionListElements[i].children[0].onclick = function(){
