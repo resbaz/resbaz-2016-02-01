@@ -91,14 +91,27 @@ classes:
     - name: REDCap
       id: red
       blurb: Learn REDCap for medical and clinical survey data
-schedule: Each day at ResBaz will be split into daytime and evening events. The day will be dedicated to classroom teaching time where we will fill your brains with the latest digital research skills. The evening will be about networking with your fellow cross-disciplinary researchers and having fun. <br><br> During the day classes are broken into three 90 minute sessions, starting at 10.30 am, 1.30 pm and 3 pm. A detailed timetable will be displayed here once sessions are confirmed.<br>
+schedule: Each day at ResBaz will be split into daytime and evening events. The day will be dedicated to classroom teaching time where we will fill your brains with the latest digital research skills. The evening will be about networking with your fellow cross-disciplinary researchers and having fun. <br><br> During the day classes are broken into three 90 minute sessions, starting at 9.30 am, 11.30 pm and 3 pm. A detailed timetable will be displayed here once sessions are confirmed.<br>
 days:
  - day: Monday February 1
    sessions:
-    - title: session 1
-    - title: session 2
-    - title: session 3
-    - title: evening
+    - title: 8am Registration
+    - title: 9am Key Story
+      id: KS1
+      blurb: Fiona Tweedie
+    - title: 9.30am Training sesion 1
+    - title: 11am Morning tea
+    - title: 11.30am Training session 2
+    - title: 1pm Lunch
+    - title: 2pm Training session 3
+    - title: 3.30pm Afternoon tea
+    - title: 4pm Bazaar
+      id: d1b1
+      blurb: Meet other attendees at our 'speed-friending' and bond over the ResBaz Treasure Hunt, held on the university campus 
+    - title: 6.30pm Dinner
+    - title: 7.30pm Bazaar
+      id: d1b2
+      blurb: Evening events will be a research confession session, 'Walk-the-Plank' and and open mic / improv night under the stars
  - day: Tuesday February 2
    sessions:
     - title: session 1
@@ -220,7 +233,7 @@ sponsors:
 
 <!-- Schedule -->
 <section id='scheduleSection'>
-    <div class='container'>
+    <div class='container', id='session-list'>
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h1>Schedule</h1>
@@ -236,7 +249,10 @@ sponsors:
                         <h4>{{ d.day }}</h4>                        
                         <div class='list-group'>
                         {% for session in d.sessions %}                  
-                                <a class='list-group-item'>{{ session.title }}</a>
+                        <div class = 'list-group-item text-left'>
+                            <a class='sessionItem' id = {{ session.id }} >{{ session.name }}</a><br>
+                            <p class = 'hidden' id = {{ session.id}}Blurb > {{ session.blurb }} </p>
+                        </div>
                         {% endfor %}
                         </div>                        
                 </div>
@@ -402,6 +418,16 @@ sponsors:
     var toolListElements = toolList.getElementsByClassName('list-group-item')
     for(var i=0; i<toolListElements.length; i++){
             toolListElements[i].children[0].onclick = function(){
+                 var idOfBlurb = this.id + 'Blurb';
+                 document.getElementById(idOfBlurb).classList.toggle('hidden');
+            }
+        }
+
+    // SESSION LIST - ALL
+    var sessionList = document.getElementById('session-list')
+    var sessionListElements = sessionList.getElementsByClassName('list-group-item')
+    for(var i=0; i<sessionListElements.length; i++){
+            sessionListElements[i].children[0].onclick = function(){
                  var idOfBlurb = this.id + 'Blurb';
                  document.getElementById(idOfBlurb).classList.toggle('hidden');
             }
