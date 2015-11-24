@@ -2,7 +2,7 @@
 layout: site
 permalink: brisbane
 
-location: Template
+location: Brisbane
 
 dates: February 1-3, 2016
 
@@ -12,60 +12,66 @@ map: sites/brisbane.geojson
 
 accommodation: Your accommodation text.
 
-menu: Your Menu text.
+menu: The Research Bazaar is a (free-of-charge) 3-day intensive conference where researchers come together to up-skill in ‘next generation digital research tools and skills’. For more info see our <a href = "http://melbourne.resbaz.edu.au/resbaz2016", target='_blank'>FAQ</a>.<br><br>Below you'll find the training and events on offer in Brisbane - the site will be QUT's Gardens Point campus. You can sign up <a href="#registerSection">here</a>.
+
+As a warmup for Brisbane ResBaz, we will also be running a [Software Carpentry](http://www.software-carpentry.org/) instructor training on 18-19 January at The University of Queensland. Those new instructors will then teach sessions at ResBaz.
+
+Are you interested in helping out, perhaps by running a session, giving a talk or just by volunteering some time? Fill out <a href = "https://docs.google.com/forms/d/1ptYCyGqJmJVZPHuYj2CvxNtyGas9cNvi_hr0wQ8soZM/viewform", target='_blank'>this short form</a> to tell us what you're interested in. You don't have to volunteer for all three days - we will need most people on Wednesday 3 February.
 
 classes:
- - class: Main Streams
+ - class: Main Events
    tools:
-    - name: tool1
-      id: id1
-      blurb: Description of tool # 1.
-    - name: tool2
-      id: id2
-      blurb: Description of tool # 2.
-    - name: tooln
-      id: idn
-      blurb: Description of tool # n.
+    - name: Software Carpentry (with R)
+      id: swcR
+      blurb: Software Carpentry is about teaching foundational computational skills to researchers of all disciplines. This stream will teach Bash, version control with Git, and the programming language R.
+    - name: Software Carpentry (with Python)
+      id: swcPython
+      blurb: This stream will teach Bash, version control with Git, and the programming language Python.
+    - name: Library Carpentry Module 1
+      id: libraryCarpentry
+      blurb: Foundational data skills for librarians, such as regular expressions and how to use the command line. The sessions will be based on library examples.
+    - name: Software Credit Seminar
+      id: softwarecredit
+      blurb: This seminar will discuss the lack of adequate reward and recognition, not to mention career paths for scientific software developers. There will be a speakers from the Australian National Data Service. Research software developers from different disciplines will also give their views on what is needed to reward this important work.
 
- - class: Minor Electives
+ - class: Specialty Sessions and Networking
    tools:
-    - name: tool1
+    - name: BCCVL
       id: id1
-      blurb: Description of tool # 1.
-    - name: tool2
+      blurb: Advice on using the Virtual Lab for species distribution modelling and other tasks.
+    - name: GVL
       id: id2
-      blurb: Description of tool # 2.
-    - name: tooln
+      blurb: Data analysis using Galaxy and other tools.
+    - name: Your digital tools poster session + lightning talks
       id: idn
-      blurb: Description of tool # n.
+      blurb: A place to see what kind of tools and workflows everyone else is using to tackle their research problems.
+    - name: Triple Hacky Hours
+      id: hackyhour
+      blurb: Start applying what you learned on the first two days to your own work, with the experts right next to you.
+    - name: Knowledge Bazaar
+      id: knowledgeBazaar
+      blurb: Find out what's going in Brisbane and talk to your local support teams. Learn about the resources available to you as a researcher.
 
-schedule: Your schedule description.
+schedule: Brisbane's Research Bazaar kicks off with two days of Software Carpentry training, to get you started with the
 days:
  - day: Monday February 1
    sessions:
-    - title: session 1
-    - title: session 2
-    - title: session 3
-    - title: evening
+    - title: "Software Carpentry: Bash"
+    - title: "Software Carpentry: R or Python"
  - day: Tuesday February 2
    sessions:
-    - title: session 1
-    - title: session 2
-    - title: session 3
-    - title: evening
+    - title: "Software Carpentry: R or Python"
+    - title: "Software Carpentry: Git or Library Carpentry"
  - day: Wednesday February 3
    sessions:
-    - title: session 1
-    - title: session 2
-    - title: session 3
-    - title: evening
+    - title: Software Credit Seminar
+    - title: Poster Session + Lightning Talks
+    - title: Hacky Hours + the Knowledge Bazaar
+
 speakers:
- - name:
-   img: img/placehold.jpg
-   blurb:
  - name: TBC
    img: img/speakerTBC.jpg
-   blurb: Our KeyStory speakers are still to be confirmed - watch this space!
+   blurb: Our speakers are still to be confirmed - watch this space!
  - name: You!
    img: img/sponsors/fake-sponsor.png
    blurb: We want you to help lead a session; let us know if you're interested when you <a href="#registerSection">register</a>.
@@ -174,12 +180,12 @@ sponsors:
         </div>
             {% for d in page.days %}
                 <div class="col-md-4">
-                        <h4>{{ d.day }}</h4>                        
+                        <h4>{{ d.day }}</h4>
                         <div class='list-group'>
-                        {% for session in d.sessions %}                  
+                        {% for session in d.sessions %}
                                 <a class='list-group-item'>{{ session.title }}</a>
                         {% endfor %}
-                        </div>                        
+                        </div>
                 </div>
             {% endfor %}
         </div>
@@ -229,7 +235,7 @@ sponsors:
                     <a href="" target="_blank" class="btn btn-lg btn-outline light-bkg">
                         <i class="fa fa-users"></i> Register (Coming Soon)
                     </a>
-                </div>  
+                </div>
             </div>
         </div>
     </div>
@@ -303,7 +309,7 @@ sponsors:
 
 
 <!-- TEST SCRIPT -->
-<script> 
+<script>
     // var listElements1 = document.getElementsByClassName('list-group-item')
     // console.log(listElements1)
     var toolList = document.getElementById('tool-list')
