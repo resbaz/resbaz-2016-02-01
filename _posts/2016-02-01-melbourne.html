@@ -429,11 +429,8 @@ sponsors:
 
     // SESSION LIST - ALL
     var sessionList = document.getElementById('session-list')
-    console.log(sessionList)
     var sessionListElements = sessionList.getElementsByClassName('list-group-item')
-    console.log(sessionListElements)
     for(var i=0; i<sessionListElements.length; i++){
-            console.log(sessionListElements[i])
             sessionListElements[i].children[0].onclick = function(){
                  var idOfBlurb = this.id + 'Blurb';
                  document.getElementById(idOfBlurb).classList.toggle('hidden');
