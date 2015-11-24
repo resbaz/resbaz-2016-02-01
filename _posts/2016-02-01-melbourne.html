@@ -96,29 +96,16 @@ days:
  - day: Monday February 1
    sessions:
     - title: 8am Registration
-      id: 1
     - title: 9am Key Story
-      id: KS1
-      blurb: Fiona Tweedie
     - title: 9.30am Training sesion 1
-      id: d1t1
     - title: 11am Morning tea
-      id: d1m
     - title: 11.30am Training session 2
-      id: d1t2
     - title: 1pm Lunch
-      id: d1l
     - title: 2pm Training session 3
-      id: d1t3
     - title: 3.30pm Afternoon tea
     - title: 4pm Bazaar
-      id: d1b1
-      blurb: Meet other attendees at our speed friending and bond over the ResBaz Treasure Hunt, held on the university campus 
     - title: 6.30pm Dinner
-      id: d1d
     - title: 7.30pm Bazaar
-      id: d1b2
-      blurb: Evening events will be a research confession session, Walk the Plank and and open mic night under the stars
  - day: Tuesday February 2
    sessions:
     - title: session 1
@@ -240,7 +227,7 @@ sponsors:
 
 <!-- Schedule -->
 <section id='scheduleSection'>
-    <div class='container', id='session-list'>
+    <div class='container'>
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h1>Schedule</h1>
@@ -256,9 +243,7 @@ sponsors:
                         <h4>{{ d.day }}</h4>                        
                         <div class='list-group'>
                         {% for session in d.sessions %}                  
-                        <div class = 'list-group-item text-left'>
-                            <a>{{ session.title}}</a><br>
-                        </div>
+                                <a class='list-group-item'>{{ session.title }}</a>
                         {% endfor %}
                         </div>                        
                 </div>
@@ -428,16 +413,6 @@ sponsors:
                  document.getElementById(idOfBlurb).classList.toggle('hidden');
             }
         }
-
-    // SESSION LIST - ALL
-    // var sessionList = document.getElementById('session-list')
-    // var sessionListElements = sessionList.getElementsByClassName('list-group-item')
-    // for(var i=0; i<sessionListElements.length; i++){  
-    //         sessionListElements[i].children[0].onclick = function(){
-    //              var idOfBlurb = this.id + 'Blurb';
-    //              document.getElementById(idOfBlurb).classList.toggle('hidden');
-    //         }
-    //     }
 
     // REGISTRATION FLOWCHART
     var flowchartBtn = document.getElementById('reg_flowchart_btn')
