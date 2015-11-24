@@ -101,18 +101,21 @@ days:
       id: KS1
       blurb: Fiona Tweedie
     - title: 9.30am Training sesion 1
-      id:
+      id: d1t1
     - title: 11am Morning tea
-      id:
+      id: d1m
     - title: 11.30am Training session 2
-      id:
+      id: d1t2
     - title: 1pm Lunch
+      id: d1l
     - title: 2pm Training session 3
+      id: d1t3
     - title: 3.30pm Afternoon tea
     - title: 4pm Bazaar
       id: d1b1
       blurb: Meet other attendees at our speed friending and bond over the ResBaz Treasure Hunt, held on the university campus 
     - title: 6.30pm Dinner
+      id: d1d
     - title: 7.30pm Bazaar
       id: d1b2
       blurb: Evening events will be a research confession session, Walk the Plank and and open mic night under the stars
@@ -430,7 +433,7 @@ sponsors:
     // SESSION LIST - ALL
     var sessionList = document.getElementById('session-list')
     var sessionListElements = sessionList.getElementsByClassName('list-group-item')
-    for(var i=0; i<sessionListElements.length; i++){
+    for(var i=0; i<sessionListElements.length; i++){  
             sessionListElements[i].children[0].onclick = function(){
                  var idOfBlurb = this.id + 'Blurb';
                  document.getElementById(idOfBlurb).classList.toggle('hidden');
