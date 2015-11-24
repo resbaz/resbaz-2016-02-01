@@ -96,6 +96,7 @@ days:
  - day: Monday February 1
    sessions:
     - title: 8am Registration
+      id:
     - title: 9am Key Story
       id: KS1
       blurb: Fiona Tweedie
@@ -425,6 +426,7 @@ sponsors:
 
     // SESSION LIST - ALL
     var sessionList = document.getElementById('session-list')
+    console.log(sessionList)
     var sessionListElements = sessionList.getElementsByClassName('list-group-item')
     for(var i=0; i<sessionListElements.length; i++){
             sessionListElements[i].children[0].onclick = function(){
