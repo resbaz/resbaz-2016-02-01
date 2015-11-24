@@ -96,7 +96,7 @@ days:
  - day: Monday February 1
    sessions:
     - title: 8am Registration
-      id:
+      id: 1
     - title: 9am Key Story
       id: KS1
       blurb: Fiona Tweedie
@@ -108,11 +108,11 @@ days:
     - title: 3.30pm Afternoon tea
     - title: 4pm Bazaar
       id: d1b1
-      blurb: Meet other attendees at our 'speed friending' and bond over the ResBaz Treasure Hunt, held on the university campus 
+      blurb: Meet other attendees at our speed friending and bond over the ResBaz Treasure Hunt, held on the university campus 
     - title: 6.30pm Dinner
     - title: 7.30pm Bazaar
       id: d1b2
-      blurb: Evening events will be a research confession session, 'Walk the Plank' and and open mic / improv night under the stars
+      blurb: Evening events will be a research confession session, Walk the Plank and and open mic night under the stars
  - day: Tuesday February 2
    sessions:
     - title: session 1
@@ -428,7 +428,9 @@ sponsors:
     var sessionList = document.getElementById('session-list')
     console.log(sessionList)
     var sessionListElements = sessionList.getElementsByClassName('list-group-item')
+    console.log(sessionLisElements)
     for(var i=0; i<sessionListElements.length; i++){
+            console.log(sessionListElements[i])
             sessionListElements[i].children[0].onclick = function(){
                  var idOfBlurb = this.id + 'Blurb';
                  document.getElementById(idOfBlurb).classList.toggle('hidden');
