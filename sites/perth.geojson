@@ -1,0 +1,16 @@
+{
+    "type": "FeatureCollection",
+    "features": [    
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":[-32.066449, 115.832363] 
+            },
+            "properties": {
+                "marker-color": "#2b3990",
+                "details": "Learning Link"
+            }
+        },
+    ]
+}
