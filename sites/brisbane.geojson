@@ -1,0 +1,16 @@
+{
+    "type": "FeatureCollection",
+    "features": [    
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":[153.0098361,-27.4954306]
+            },
+            "properties": {
+                "marker-color": "#2b3990",
+                "details": "<a href='https://2016-02-01.resbaz.com/brisbane/'>Brisbane</a>"
+            }
+        }
+    ]
+}
