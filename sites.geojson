@@ -1,15 +1,15 @@
 {
     "type": "FeatureCollection",
-    "features": [    
+    "features": [
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates":[144.96289,-37.79901] 
+                "coordinates":[144.96289,-37.79901]
             },
             "properties": {
                 "marker-color": "#2b3990",
-                "details": "<a href='https://2016-02-01.resbaz.com/melbourne/'>University of Melbourne</a>"
+                "details": "<a href='https://feb2016.resbaz.com/melbourne/'>University of Melbourne</a>"
             }
         },
 
@@ -17,11 +17,11 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates":[174.771265, -36.853083] 
+                "coordinates":[174.771265, -36.853083]
             },
             "properties": {
                 "marker-color": "#2b3990",
-                "details": "<a href='https://2016-02-01.resbaz.com/auckland/'>Auckland</a>"
+                "details": "<a href='https://feb2016.resbaz.com/auckland/'>Auckland</a>"
             }
         },
 
@@ -33,7 +33,7 @@
             },
             "properties": {
                 "marker-color": "#2b3990",
-                "details": "<a href='https://2016-02-01.resbaz.com/perth/'>Perth</a>"
+                "details": "<a href='https://feb2016.resbaz.com/perth/'>Perth</a>"
             }
         },
 
@@ -45,7 +45,7 @@
             },
             "properties": {
                 "marker-color": "#2b3990",
-                "details": "<a href='https://2016-02-01.resbaz.com/dunedin/'>Dunedin</a>"
+                "details": "<a href='https://feb2016.resbaz.com/dunedin/'>Dunedin</a>"
             }
         },
 
@@ -57,7 +57,7 @@
             },
             "properties": {
                 "marker-color": "#2b3990",
-                "details": "<a href='https://2016-02-01.resbaz.com/brisbane/'>Brisbane</a>"
+                "details": "<a href='https://feb2016.resbaz.com/brisbane/'>Brisbane</a>"
             }
         },
 
@@ -69,7 +69,7 @@
             },
             "properties": {
                 "marker-color": "#2b3990",
-                "details": "<a href='https://2016-02-01.resbaz.com/sydney/'>Sydney</a>"
+                "details": "<a href='https://feb2016.resbaz.com/sydney/'>Sydney</a>"
             }
         }
     ]
