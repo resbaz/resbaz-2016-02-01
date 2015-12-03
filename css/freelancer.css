@@ -513,7 +513,8 @@ div.contact-buttons{
 }
 
 img.nav-logo{
-    width: 25%;
+    max-height: 4em;
+    max-width: 100%;
 }
 
 nav {
