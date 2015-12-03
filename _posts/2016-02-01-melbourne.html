@@ -8,14 +8,14 @@ splashImage: https://farm1.staticflickr.com/681/22032155473_bca28567d4_z.jpg
 map: sites/melbourne.geojson
 registration: The registration process for the Research Bazaar conference in Melbourne is outlined below.
 regsteps:
-  - step: 1. Fill out the Pre-Assessment Survey 
+  - step: 1. Fill out the Pre-Assessment Survey
   - step: 2. Fill in the ResBaz Melbourne registration form (Apply Now)
   - step: 3. Wait for acceptance email and further instructions
   - step: 4. Fill in the eventbrite form to confirm your attendance and submit your poster profile (details will be in the acceptance email)
   - step: 5. Come and Enjoy ResBaz in 1-3 February 2016!
 regschedule:
   - date: 1 November
-    name: Applications go live (for ResBaz and instructor training) 
+    name: Applications go live (for ResBaz and instructor training)
   - date: 16 December
     name: Applications close
   - date: 19 December
@@ -55,7 +55,7 @@ classes:
       blurb: 3D Slicer (Slicer) is a free and open source software package for medical image analysis and scientific visualization. Slicer’s platform provides functionalities for segmentation, registration and three-dimensional visualization of multimodal image data, as well as advanced image analysis algorithms for diffusion tensor imaging, functional magnetic resonance imaging and image-guided radiation therapy. The training aims to teach basic principles in image processing, as well as techniques in extracting 3D models for bio-simulations and 3D printing.
     - name: HTML, CSS, and JavaScript Web Development
       id: web
-      blurb: HTML (the Hypertext Markup Language), CSS (Cascading Style Sheets), and JavaScript are the core tools for building web pages. In this workshop you'll learn the basics of structuring a website, and controlling how it looks and acts. 
+      blurb: HTML (the Hypertext Markup Language), CSS (Cascading Style Sheets), and JavaScript are the core tools for building web pages. In this workshop you'll learn the basics of structuring a website, and controlling how it looks and acts.
     - name: D3 Data Visualization
       id: d3
       blurb: D3 is a JavaScript library for working with data and displaying it online. D3 helps you bring data to life using HTML, SVG, and CSS. This workshop will introduce you to the basics of using D3 to create beautiful, animated and interactive graphics out of your data. (This workshop requires beginner level HTML and CSS skills, plus experience in at least one programming language)
@@ -193,6 +193,11 @@ sponsors:
                     <span class="name">{{page.location}}</span>
                     <hr class="star-light"></hr>
                     <span class="skills">{{page.dates}}</span>
+                    <p class="come-along page-scroll">
+                      <a href="#registerSection" class="btn btn-lg btn-success">
+                        Apply Now!
+                      </a>
+                    </p>
                 </div>
             </div>
         </div>
@@ -255,12 +260,12 @@ sponsors:
         </div>
             {% for d in page.days %}
                 <div class="col-md-4">
-                        <h4>{{ d.day }}</h4>                        
+                        <h4>{{ d.day }}</h4>
                         <div class='list-group'>
-                        {% for session in d.sessions %}                  
+                        {% for session in d.sessions %}
                                 <a class='list-group-item'>{{ session.title }}</a>
                         {% endfor %}
-                        </div>                        
+                        </div>
                 </div>
             {% endfor %}
         </div>
@@ -307,7 +312,7 @@ sponsors:
                     <a href="http://go.unimelb.edu.au/2ura" target="_blank" class="btn btn-lg btn-outline light-bkg">
                         <i class="fa fa-users"></i> Apply Now
                     </a>
-                </div>  
+                </div>
             </div>
 
             <div class="col-lg-12 text-center">
@@ -316,20 +321,20 @@ sponsors:
             </div>
 
             <div class="col-md-6 text-center">
-                <h4> How to Register </h4>    
+                <h4> How to Register </h4>
                 <div class='list-group'>
-                {% for d in page.regsteps %}                  
+                {% for d in page.regsteps %}
                 <a class='list-group-item text-left'>{{ d.step }}</a>
                 {% endfor %}
-                </div>  
+                </div>
 
             </div>
 
             <div class="col-md-6 text-center">
-                  <h4> Deadlines </h4>    
+                  <h4> Deadlines </h4>
                   <div class = 'list-group'>
                     {% for d in page.regschedule %}
-                    <li class = 'list-group-item text-left'> <b> {{ d.date}} </b> 
+                    <li class = 'list-group-item text-left'> <b> {{ d.date}} </b>
                       {{ d.name }}
                     </li>
 
@@ -418,7 +423,7 @@ sponsors:
 
 
 <!-- RUNS THE CLICKABLE CONTENT ON THIS PAGE -->
-<script> 
+<script>
     // TOOL LIST - ALL
     var toolList = document.getElementById('tool-list')
     var toolListElements = toolList.getElementsByClassName('list-group-item')
