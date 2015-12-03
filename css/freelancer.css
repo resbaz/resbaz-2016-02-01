@@ -123,6 +123,11 @@ header .intro-text .skills {
     header .intro-text .skills {
         font-size: 1.75em;
     }
+
+    header .intro-text p.come-along {
+        font-size: 1.75em;
+        margin-top: 1em;
+    }
 }
 
 @media(min-width:768px) {
@@ -463,7 +468,7 @@ footer .footer-below {
 /*Custom*/
 
 .lead-image{
-    max-width: 50%;
+    max-width: 25%;
 }
 
 .lead-image-local{
