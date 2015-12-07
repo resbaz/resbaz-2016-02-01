@@ -10,11 +10,11 @@ splashImage: https://farm1.staticflickr.com/681/22032155473_bca28567d4_z.jpg
 
 map: sites/brisbane.geojson
 regsteps:
-  - step: 1. Fill in the ResBaz Brisbane registration form (<a href="https://docs.google.com/forms/d/1hvmJ8yK6mJQygdc_XYamRBNLRBdPj8RkQNazdz9ePJY/viewform">Apply Here</a>)
+  - step: 1. Fill in the ResBaz Brisbane registration form (Apply Here)
   - step: 2. To improve your chance of acceptance into the class stream you want, please fill in the <a href="http://go.unimelb.edu.au/4ura" target = "_blank"> Global Research Survey </a>
   - step: 3. Wait for acceptance email and further instructions
   - step: 4. Fill in the Eventbrite form to confirm your attendance and submit your poster (details will be in the acceptance email)
-  - step: 5. Come and enjoy ResBaz in 1-3 February 2016!
+  - step: 5. Come and enjoy ResBaz on 1-3 February 2016!
 
 accommodation: Your accommodation text.
 
@@ -230,24 +230,27 @@ sponsors:
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-4 col-lg-offset-2">
-                <p>Register here for the {{page.location}} Research Bazaar.</p>
-            </div>
-            <div class="col-lg-4">
-                <p>The registration process starts with a Pre-Assessment Survey, so that we can create the best possible experience for you. Use the promo code given to you at the end of the survey to complete the registration form.</p>
-            </div>
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="https://docs.google.com/forms/d/1io9-YyETAl9sQ_NkIjehq4juemgnlaXilG17USHvjug/edit" target = "_blank" class="btn btn-lg btn-outline light-bkg">
-                        <i class="fa fa-pencil"></i> Pre-Assessment Survey
-                    </a>
+
+                    <p>Want to come to ResBaz Brisbane?</p>
                     <a href="https://docs.google.com/forms/d/1hvmJ8yK6mJQygdc_XYamRBNLRBdPj8RkQNazdz9ePJY/viewform" target="_blank" class="btn btn-lg btn-outline light-bkg">
-                        <i class="fa fa-users"></i> Register
+                        <i class="fa fa-users"></i> Apply Here
                     </a>
+                    <p><br /></p>
                 </div>
             </div>
-        </div>
+
+            <div class="col-md-6 text-center">
+                <h4> Registration Process </h4>
+                <div class='list-group'>
+                {% for d in page.regsteps %}
+                <li class='list-group-item text-left'>{{ d.step }}</li>
+                {% endfor %}
+                </div>
+            </div>
     </div>
+
 </section>
 
 <hr class='divider'></hr>
