@@ -5,11 +5,11 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates":[115.832363, -32.066449] 
+                "coordinates":[153.0098361,-27.4954306]
             },
             "properties": {
                 "marker-color": "#2b3990",
-                "details": "Murdoch University [513] Learning Link"
+                "details": "<a href='https://2016-02-01.resbaz.com/brisbane/'>Brisbane</a>"
             }
         }
     ]
