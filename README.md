@@ -13,8 +13,8 @@ In addition to the main page, this website also offers local listings for each s
 This website is built from the [Start Bootstrap Freelancer theme](https://github.com/IronSummitMedia/startbootstrap-freelancer), on [Jekyll](https://jekyllrb.com/) and [Bootstrap](http://getbootstrap.com/). If you'd like to build it on your local machine, do the following:
 
  - [Install Jekyll](http://jekyllrb.com/docs/installation/)
- - in the base directory of this repo, do `jekyll serve`
- - if all has gone well, you'll be able to visit your website at `127.0.0.1:4000/resbaz-2016-02-01/`
+ - in the base directory of this repo, do `jekyll serve --future`
+ - if all has gone well, you'll be able to visit your version of the main website at `http://127.0.0.1:4000/` and the various city pages at `http://127.0.0.1:4000/melbourne`, `http://127.0.0.1:4000/auckland`, etc. 
 
 ### Contribution Guide
 
