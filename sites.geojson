@@ -77,11 +77,11 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates":[-78.570625,-0.1865938]
+                "coordinates":[-79.905955, -2.181465]
             },
             "properties": {
                 "marker-color": "#2b3990",
-                "details": "<a href='https://feb2016.resbaz.com/quito/'>Quito</a>"
+                "details": "<a href='https://feb2016.resbaz.com/guayaquil/'>Universidad Católica Santiago de Guayaquil</a>"
             }
         }
     ]
