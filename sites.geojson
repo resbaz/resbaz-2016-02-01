@@ -71,6 +71,18 @@
                 "marker-color": "#2b3990",
                 "details": "<a href='http://www.psych.usyd.edu.au/resbaz16/?page_id=22'>Sydney</a>"
             }
+        },
+
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":[-78.570625,-0.1865938]
+            },
+            "properties": {
+                "marker-color": "#2b3990",
+                "details": "<a href='https://feb2016.resbaz.com/quito/'>Quito</a>"
+            }
         }
     ]
 }
