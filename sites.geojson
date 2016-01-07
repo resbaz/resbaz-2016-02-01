@@ -95,6 +95,18 @@
                 "marker-color": "#2b3990",
                 "details": "<a href='http://www.lib.sfu.ca/about/branches-depts/rc/networking/research-bazaar'>Vancouver</a>"
             }
+        },
+
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":[-97.445891, 35.208280]
+            },
+            "properties": {
+                "marker-color": "#2b3990",
+                "details": "<a href='http://oudigitalscholar.com/resbaz/'>Oklahoma</a>"
+            }
         }
     ]
 }
