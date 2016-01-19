@@ -19,10 +19,13 @@ classes:
    tools:
     - name: Git
       id: swcGit
-      blurb: Git es un Software de control de versiones, muy util.
+      blurb: Git es un Software de control de versiones, indispensable para colaborar entre vairas personas en un mismo proyecto de software y para tener un historial de cambios y evolucion del mismo.
     - name: Linea de Comandos en Linux
       id: swcCommandLine
       blurb: Aprenderemos lo basico para el uso de la linea de comandos en sistemas Unix/Linux. Esencial para utilizar software de investigacion en entornos GNU/Linux.
+    - name: Matlab
+      id: Matlab
+      blurb: Matlab es uno de los software matematicos mas utilizados. Si tu investigacion tiene formulas avanzadas, te beneficiaras mucho de aprender esta herramienta.
     - name: Mendeley
       id: swcMendeley
       blurb: Taller en la utilizacion de Mendeley para el manejo de referencias y la colaboracion en proyectos de investigacion.
@@ -48,20 +51,25 @@ days:
 speakers:
  - name: Ivan Sanchez
    img: img/isanchez.jpg
-   blurb: Ivan Sanchez es coordinador de esta conferencia de ResBaz-GYE. Sera el intructor de Git para manejo de versiones de software. Su interes de investigacion es Mineria de datos y Machine Learning.
+   blurb: Coordinador de esta conferencia de ResBaz-GYE. Sera el intructor de Git para manejo de versiones de software.
+   linkedin: "https://ec.linkedin.com/in/iasanchez" 
  - name: Jorge Moran
    img: img/jmoran.jpg
-   blurb: Jorge Moran es director de plataformas moviles en DayScript. Sera el intructor del Taller de Linea de comandos en Linux. Su interes de postgrado es la Seguridad Informatica.
+   blurb: Director de IT en DayScript. Es el intructor de Linea de comandos en Linux.
+   linkedin: "https://ec.linkedin.com/in/jorge-morán-salazar-6a099150/en" 
  - name: Cristian Montero
    img: img/cmontero.jpg
-   blurb: Cristian Montero trabaja en la Universidad del Azuay. Sera el instructor de Mendeley para manejo de referencias y de LaTeX para la elaboracion de documentos. Su interes de Investigacion es la Computacion distribuida y Cloud Computing.
+   blurb: Trabaja en la Universidad del Azuay. Es el instructor de Mendeley y de LaTeX.
+   linkedin: "http://ec.linkedin.com/in/cristian-montero-b4739338/en"
  - name: Jorge Barros
    img: img/jbarros.jpg
-   blurb: Jorge Barros es director de su emprendimiento en software empresarial, IQuantech. Jorge es instructor de Matlab en la UCSG y tambien dara el taller de Matlab en este ResBaz.
+   blurb: Director de su emprendimiento IQuantech. Es instructor de Matlab en la UCSG y tambien en el taller de ResBaz.
+   linkedin: "http://ec.linkedin.com/in/jorgebarrosc"
 
 sponsors:
  - name: 'Universidad Catolica de Santiago de Guayaquil'
-   img: fake-sponsor.png
+   img: Logo_UCSG.svg
+   url: "http://ucsg.edu.ec/"
 
 ---
 
@@ -131,11 +139,11 @@ sponsors:
         </div>
 
             {% for d in page.classes %}
-                <div class = "col-md-6 text-center">
+                <div class = "col-lg-6 text-center">
                     <h4>{{d.class}}</h4>
                     <div class = 'list-group'>
                         {% for tool in d.tools %}
-                        <div class = 'list-group-item text-left'>
+                        <div class = 'list-group-item text-center'>
                             <a class='menuItem' id = {{ tool.id }} >{{ tool.name }}</a><br>
                             <p class = 'hidden' id = {{ tool.id}}Blurb > {{ tool.blurb }} </p>
                         </div>
@@ -163,7 +171,7 @@ sponsors:
             </div>
         </div>
             {% for d in page.days %}
-                <div class="col-md-4 text-center">
+                <div class="col-lg-4 text-center">
                         <h4>{{ d.day }}</h4>                        
                         <div class='list-group'>
                         {% for session in d.sessions %}                  
@@ -204,7 +212,7 @@ sponsors:
                 <hr class="star-primary">
             </div>
         </div>
-        <div class="row">
+        <div class="row text-center">
             <div class="col-lg-4 col-lg-offset-2">
                 <p>Registrese aqui para el Research Bazaar en {{page.location}}.</p>
             </div>
@@ -236,7 +244,9 @@ sponsors:
                 <hr class="star-primary">
                 {% for speaker in page.speakers %}
                     <div class='col-md-3 speaker-tile'>
+			<a href={{speaker.linkedin}}>
                         <img class='img-circle' src={{site.baseurl}}/{{ speaker.img }}></img>
+                        </a>
                         <h4>{{ speaker.name }}</h4>
                         <p>{{ speaker.blurb }}</p>
                     </div>
@@ -282,7 +292,9 @@ sponsors:
               <p>Gracias a los Auspiciantes que hacen posible los talleres ResBaz en {{page.location}}.</p>
               {% for sponsor in page.sponsors %}
                   <div class='sponsor-tile'>
-                      <img src={{site.baseurl}}/img/sponsors/{{ sponsor.img }}></img>
+                      <a href={{sponsor.url}}>
+                          <img src={{site.baseurl}}/img/sponsors/{{ sponsor.img }}></img>
+                      </a>
                       <h4>{{ sponsor.name }}</h4>
                   </div>
               {% endfor %}
