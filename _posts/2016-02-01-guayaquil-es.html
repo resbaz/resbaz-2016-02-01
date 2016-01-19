@@ -139,7 +139,7 @@ sponsors:
         </div>
 
             {% for d in page.classes %}
-                <div class = "col-lg-6 text-center">
+                <div class = "col-lg-12 text-center">
                     <h4>{{d.class}}</h4>
                     <div class = 'list-group'>
                         {% for tool in d.tools %}
@@ -171,7 +171,7 @@ sponsors:
             </div>
         </div>
             {% for d in page.days %}
-                <div class="col-lg-4 text-center">
+                <div class="col-lg-12 text-center">
                         <h4>{{ d.day }}</h4>                        
                         <div class='list-group'>
                         {% for session in d.sessions %}                  
@@ -213,10 +213,10 @@ sponsors:
             </div>
         </div>
         <div class="row text-center">
-            <div class="col-lg-4 col-lg-offset-2">
+            <div class="col-lg-12 col-lg-offset-2">
                 <p>Registrese aqui para el Research Bazaar en {{page.location}}.</p>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-12">
                 <p>El registro comienza con una encuesta previa, para poder crear la mejor experiencia posible para todos. Por favor, use el codigo promocional que se suministra al final de la encuesta para completar la forma de registro.</p>
             </div>
             <div class="col-lg-8 col-lg-offset-2 text-center">
