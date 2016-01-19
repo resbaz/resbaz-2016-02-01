@@ -8,18 +8,18 @@ dates: Febrero 13 y 14, 2016
 
 splashImage: https://farm1.staticflickr.com/681/22032155473_bca28567d4_z.jpg
 
-map: sites/template.geojson
+map: sites/guayaquil.geojson
 
 accommodation: Cada asistente debe organizar sus detalles de Hospedaje. De todas maneras, estamos gustosos de ayudarte, escribenos un email a resbaz2016@erenetwork.org con tus inquietudes.
 
 about: For the first time ever, Ecuadorian Research and Entrepreneurship Network (EREN) brings the Research Bazaar to Ecuador. The Research Bazaar is a free, two-day intensive capacity-building conference for researchers and individuals interested in developing 'next-generation digital research tools and skills'. This event is open to all those who believe they will benefit from this training and previous knowledge of these tools is not required. Don't miss out on this amazing opportunity! For more information on how to apply, see below.
 
 classes:
- - class: Main Streams
+ - class: Talleres
    tools:
     - name: Git
       id: swcGit
-      blurb: Software de control de versiones.
+      blurb: Git es un Software de control de versiones, muy util.
     - name: Linea de Comandos en Linux
       id: swcCommandLine
       blurb: Aprenderemos lo basico para el uso de la linea de comandos en sistemas Unix/Linux. Esencial para utilizar software de investigacion en entornos GNU/Linux.
@@ -54,7 +54,7 @@ speakers:
    blurb: Jorge Moran es director de plataformas moviles en DayScript. Sera el intructor del Taller de Linea de comandos en Linux. Su interes de postgrado es la Seguridad Informatica.
  - name: Cristian Montero
    img: img/cmontero.jpg
-   blurb: Cristian Montero trabaje en la Universidad del Azuay. Sera el instructor de Mendeley para manejo de referencias y de LaTeX para la elaboracion de documentos. Su interes de Investigacion es la Computacion distribuida y Cloud Computing.
+   blurb: Cristian Montero trabaja en la Universidad del Azuay. Sera el instructor de Mendeley para manejo de referencias y de LaTeX para la elaboracion de documentos. Su interes de Investigacion es la Computacion distribuida y Cloud Computing.
  - name: Jorge Barros
    img: img/jbarros.jpg
    blurb: Jorge Barros es director de su emprendimiento en software empresarial, IQuantech. Jorge es instructor de Matlab en la UCSG y tambien dara el taller de Matlab en este ResBaz.
@@ -62,10 +62,7 @@ speakers:
 sponsors:
  - name: 'Universidad Catolica de Santiago de Guayaquil'
    img: fake-sponsor.png
- - name: 'Sponsor Number Two'
-   img: fake-sponsor.png
- - name: 'Sponsor Number Three'
-   img: fake-sponsor.png
+
 ---
 
 <!-- Navigation -->
@@ -89,13 +86,13 @@ sponsors:
                     <a href="#menuSection">Menu</a>
                 </li>
                 <li class="page-scroll">
-                    <a href="#scheduleSection">Schedule</a>
+                    <a href="#scheduleSection">Calendario</a>
                 </li>
                 <li class="page-scroll">
-                    <a href="#registerSection">Register</a>
+                    <a href="#registerSection">Registro</a>
                 </li>
                 <li class="page-scroll">
-                    <a href="#speakerSection">Speakers</a>
+                    <a href="#speakerSection">Instructores</a>
                 </li>
             </ul>
         </div>
@@ -157,7 +154,7 @@ sponsors:
     <div class='container'>
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1>Schedule</h1>
+                <h1>Calendario</h1>
                 <hr class="star-primary">
             </div>
         <div class="row">
@@ -166,7 +163,7 @@ sponsors:
             </div>
         </div>
             {% for d in page.days %}
-                <div class="col-md-4">
+                <div class="col-md-4 text-center">
                         <h4>{{ d.day }}</h4>                        
                         <div class='list-group'>
                         {% for session in d.sessions %}                  
@@ -186,7 +183,7 @@ sponsors:
     <div class='container'>
         <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h1>Venue</h1>
+                    <h1>Lugar</h1>
                     <hr class="star-primary">
                 </div>
             <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -203,24 +200,24 @@ sponsors:
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1>Come along</h1>
+                <h1>Ven y Aprendamos</h1>
                 <hr class="star-primary">
             </div>
         </div>
         <div class="row">
             <div class="col-lg-4 col-lg-offset-2">
-                <p>Register here for the {{page.location}} Research Bazaar.</p>
+                <p>Registrese aqui para el Research Bazaar en {{page.location}}.</p>
             </div>
             <div class="col-lg-4">
-                <p>The registration process starts with a Pre-Assessment Survey, so that we can create the best possible experience for you. Use the promo code given to you at the end of the survey to complete the registration form.</p>
+                <p>El registro comienza con una encuesta previa, para poder crear la mejor experiencia posible para todos. Por favor, use el codigo promocional que se suministra al final de la encuesta para completar la forma de registro.</p>
             </div>
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <a href="https://docs.google.com/forms/d/1io9-YyETAl9sQ_NkIjehq4juemgnlaXilG17USHvjug/edit" target = "_blank" class="btn btn-lg btn-outline light-bkg">
-                        <i class="fa fa-pencil"></i> Pre-Assessment Survey
+                        <i class="fa fa-pencil"></i> Encuesta Pre-Inscripcion
                     </a>
                     <a href="" target="_blank" class="btn btn-lg btn-outline light-bkg">
-                        <i class="fa fa-users"></i> Register
+                        <i class="fa fa-users"></i> Registro
                     </a>
                 </div>  
             </div>
@@ -235,7 +232,7 @@ sponsors:
     <div class='container'>
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1>Meet Our Speakers</h1>
+                <h1>Los Instructores</h1>
                 <hr class="star-primary">
                 {% for speaker in page.speakers %}
                     <div class='col-md-3 speaker-tile'>
@@ -257,7 +254,7 @@ sponsors:
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2>Accommodation</h2>
+                <h2>Hospedaje</h2>
                 <hr class="star-primary">
             </div>
         </div>
@@ -272,17 +269,17 @@ sponsors:
 <hr class='divider'></hr>
 
 <!-- Sponsors -->
-<!-- <section id="sponsors">
+<section id="sponsors">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2>Our Sponsors</h2>
+                <h2>Sponsors</h2>
                 <hr class="star-primary">
             </div>
         </div>
         <div class="row">
             <div class="col-lg-12 text-center">
-              <p>Many thanks to all our sponsors for helping bring the Resarch Bazaar to the {{page.location}}.</p>
+              <p>Gracias a los Auspiciantes que hacen posible los talleres ResBaz en {{page.location}}.</p>
               {% for sponsor in page.sponsors %}
                   <div class='sponsor-tile'>
                       <img src={{site.baseurl}}/img/sponsors/{{ sponsor.img }}></img>
@@ -292,7 +289,7 @@ sponsors:
           </div>
         </div>
     </div>
-</section> -->
+</section>
 
 
 <!-- TEST SCRIPT -->
