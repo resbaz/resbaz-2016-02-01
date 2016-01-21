@@ -90,10 +90,14 @@ speakers:
    img: img/GinnyBarbour.jpg
    blurb: "Ginny has a longstanding interest in open access and research integrity and is currently the Executive Officer of <a href='http://aoasg.org.au/'>AOASG</a> and the Chair of <a href='http://publicationethics.org/'>COPE</a>"
 sponsors:
+ - name: 'Queensland University of Technology'
+   img: QUTlogo.jpg
+ - name: ''
+   img: GriffithLogo.png
  - name: ''
    img: QCIF.png
- - name: 'Your Organisation Here'
-   img: fake-sponsor.png
+ - name: ''
+   img: UQlogo.png
 ---
 
 <!-- Navigation -->
@@ -142,6 +146,29 @@ sponsors:
         </div>
     </div>
 </header>
+
+<!-- Sponsors -->
+<section id="sponsors">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Our Sponsors</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+              <p>Many thanks to all our sponsors for helping bring the Resarch Bazaar to the {{page.location}}.</p>
+              {% for sponsor in page.sponsors %}
+                  <div class='sponsor-tile'>
+                      <img src={{site.baseurl}}/img/sponsors/{{ sponsor.img }}></img>
+                      <h4>{{ sponsor.name }}</h4>
+                  </div>
+              {% endfor %}
+          </div>
+        </div>
+    </div>
+</section>
 
 <!-- Menu -->
 <section id='menuSection'>
@@ -296,28 +323,7 @@ sponsors:
 
 <hr class='divider'></hr> -->
 
-<!-- Sponsors -->
-<section id="sponsors">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>Our Sponsors</h2>
-                <hr class="star-primary">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-              <p>Many thanks to all our sponsors for helping bring the Resarch Bazaar to the {{page.location}}.</p>
-              {% for sponsor in page.sponsors %}
-                  <div class='sponsor-tile'>
-                      <img src={{site.baseurl}}/img/sponsors/{{ sponsor.img }}></img>
-                      <h4>{{ sponsor.name }}</h4>
-                  </div>
-              {% endfor %}
-          </div>
-        </div>
-    </div>
-</section>
+
 
 
 <!-- TEST SCRIPT -->
