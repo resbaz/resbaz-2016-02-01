@@ -95,7 +95,24 @@ classes:
       blurb: In this session, we will give an overview of the Watson services available in Bluemix. As a hands-on experience, we will have a deep dive session on one Watson service - Personality Insights - where we will demonstrate creation of a simple personality inference service using Twitter data
  - class: Electives C
    tools:
-
+    - name: Analysing Urban Data with AURIN
+      id: aurin
+      blurb: In Part One, we will introduce you to over 1900 Australian urban datasets accessible by urban researchers containing a wealth of information on health, socio-economics, demographics and the built environment in general. We will explore specialised analytical tools that pull together diverse sources of data and combine them to reveal patterns and solve problems and create more sustainable, healthier built environments
+    - name: LaTeX for Theses and Journal Articles
+      id: latex
+      blurb: LaTeX is a markup language focused on beautiful typesetting, and handles large, complicated documents that cause problems in standard word processors. This workshop will provide a gentle introduction to basic LaTeX usage, with a focus on theses and articles
+    - name: Introduction to 3D Printing
+      id: intro3d
+      blurb: This session will cover the fundamentals of 3D printing; in particular the filament deposition of plastics like ABS and PLA to create a 3 dimensional object. The step-by-step process of turning an .stl file into a 3D printed model will be discussed in the 3D printing facilities at the Engineering Workshop
+    - name: Visualising Networks with Gephi
+      id: gephi
+      blurb: Create and visualise networks with Gephi. Networks are everywhere, from friendship groups, to publishing circles. Networks can be created by monkeys moving between trees in the rainforest, or by a sudden hashtag that takes over twitter. Somehow everything is connected to everything else, and with Gephi you can visualise and analyse any network you like. Come along for an introduction to Gephi
+    - name: Interactive data visualisation in your blog (Plot.ly & TinyPress)
+      id: blog
+      blurb: We all want to share our research and thoughts. And blogging on the web is the easiest and best way to do that. So much so that interactively visualising data, on the web, is now possible without a single line of code. Here we will build from scratch an interactive blog all with free graphical on-line tools
+    - name: Tools for tracking research impact and attention
+      id: impact
+      blurb: Discover who is citing or talking about your research (or the research of others). This workshop will explore traditional and altmetrics for measuring the impact of your research and identifying attention received from social media sites, news outlets, and other sources. We’ll also explore using online author IDs to link your publications and to make your work more findable and identifiable
 schedule: "Each day at ResBaz will be split into daytime and evening events. The day will be dedicated to classroom teaching time where we will fill your brains with the latest digital research skills. The evening will be about networking with your fellow cross-disciplinary researchers and having fun. <br><br> During the day classes are broken into three 90 minute sessions, starting at 9:30 am, 11:30 pm and 3:00 pm. A detailed timetable will be displayed here once sessions are confirmed.<br><br>"
 days:
  - day: Monday February 1
@@ -229,7 +246,7 @@ sponsors:
         </div>
 
             {% for d in page.classes %}
-                <div class = "col-md-3 text-center">
+                <div class = "col-sm-3 text-center">
                     <h4>{{d.class}}</h4>
                     <div class = 'list-group'>
                         {% for tool in d.tools %}
