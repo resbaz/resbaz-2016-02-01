@@ -120,10 +120,13 @@ days:
     - title: 8am Registration
     - title: 9am Key Story
     - title: 9.30am Training sesions 1
+      id:
     - title: 11am Morning tea
     - title: 11.30am Training sessions 2
+      id:
     - title: 1pm Lunch
     - title: 2pm Training sessions 3
+      id:
     - title: 3.30pm Afternoon tea
     - title: 4pm Bazaar
     - title: 6.30pm Dinner
@@ -273,7 +276,7 @@ sponsors:
 
 <!-- Schedule -->
 <section id='scheduleSection'>
-    <div class='container'>
+    <div class='container' id = 'day-list'>
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h1>Schedule</h1>
@@ -462,6 +465,12 @@ sponsors:
                  document.getElementById(idOfBlurb).classList.toggle('hidden');
             }
         }
+
+    // SCHEDULE
+    var dayList = document.getElementById('day-list')
+    var dayListElements = dayList.getElementsByClassName('list-group-item')
+    console.log(dayList)
+    console.log(dayListElements)
 
     // REGISTRATION FLOWCHART
     var flowchartBtn = document.getElementById('reg_flowchart_btn')
