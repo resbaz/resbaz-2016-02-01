@@ -117,43 +117,41 @@ schedule: "Each day at ResBaz will be split into daytime and evening events. The
 days:
  - day: Monday February 1
    sessions:
-    - title: 8am Registration
+    - title: "8:00 - 8:45 Registration"
     - title: 9am Key Story
-    - title: 9.30am Training sesions 1
-      id: d1s1
-      blurb: "R: Masters Seminar Room 2 (Room 202), Old Metallurgy (Building 166)<br>Python: Theatre 1 (Room G21), Alan Gilbert (Building 104)<br>Matlab: Theatre 3 (Room 120), Alan Gilbert (Building 104)<br>Autodesk Inventor: Collaborative Learning Space 3 (Room 143), Old Arts (Building 149)<br>Natural Language Toolkit (NLTK): eSeminar room (158), Chemistry (Building 153)<br>Data Acquisition and Cleaning: Masters Seminar Room 1 (Room 103), Old Metallurgy (Building 166)<br>D3: Gregory Room (Room 218), Earth Sciences (McCoy) (Building 200)<br>3D Slicer: eLearning Studio (156), Old Arts (Building 149)"
+    - title: "9:30 STREAM SESSION 1"
     - title: 11am Morning tea
-    - title: 11.30am Training sessions 2
-      id:
+    - title: "11:30 STREAM SESSION 2"
     - title: 1pm Lunch
-    - title: 2pm Training sessions 3
-      id:
-    - title: 3.30pm Afternoon tea
-    - title: 4pm Bazaar
-    - title: 6.30pm Dinner
-    - title: 7.30pm Bazaar
+    - title: 2pm STREAM SESSION 3
+    - title: "3:30 Afternoon Tea"
+    - title: 4pm Fun Activities
+    - title: "6:30 Dinner"
+    - title: "7:30 Social Activities"
  - day: Tuesday February 2
    sessions:
     - title: 9am Key Story
-    - title: 9.30am Training sesions 1
+    - title: "9:30 STREAM SESSION 4"
     - title: 11am Morning tea
-    - title: 11.30am Training sessions 2
+    - title: "11:30 STREAM SESSION 5"
     - title: 1pm Lunch
-    - title: 2pm Training sessions 3
-    - title: 3.30pm Afternoon tea
-    - title: 4pm Bazaar
-    - title: 6.30pm Dinner
-    - title: 7.30pm Bazaar
+    - title: 2pm STREAM SESSION 6
+    - title: "3:30 Afternoon Tea"
+    - title: 4pm Maker Space & Fun Activities
+    - title: "6:30 Dinner"
+    - title: "7:30 Nerd Nite"
  - day: Wednesday February 3
    sessions:
     - title: 9am Key Story
-    - title: 9.30am Training sesions 1
+    - title: "9:30 ELECTIVES BLOCK A"
     - title: 11am Morning tea
-    - title: 11.30am Training sessions 2
+    - title: "11:30 ELECTIVES BLOCK B"
     - title: 1pm Lunch
-    - title: 2pm Training sessions 3
-    - title: 3.30pm Afternoon tea
-    - title: 4pm Awards ceremony
+    - title: 2pm ELECTIVES BLOCK C
+    - title: "3:30 Afternoon Tea"
+    - title: 4pm Fun Activities
+    - title: "6:30 Dinner"
+    - title: "7:30 Social Activities"
 speakers:
  - name: Fiona Tweedie
    img: img/fctweedie.jpg
@@ -294,15 +292,10 @@ sponsors:
                         
                         <div class='list-group'>
                         {% for session in d.sessions %}
-                                <div class='list-group-item'>
-                                <a class = 'menuItem' id = {{session.id}}>  {{ session.title }} </a><br>
-                                <p class = 'small hidden'> {{session.blurb}} </p>
-                                </div>
+                                <a class='list-group-item'>
+                                {{ session.title }} </a>
                         {% endfor %}
                         </div>
-
-<!--                             <a class='menuItem' id = {{ tool.id }} >{{ tool.name }}</a><br>
-                            <p class = 'small hidden' id = {{ tool.id}}Blurb > {{ tool.blurb }} </p> -->
 
                 </div>
             {% endfor %}
