@@ -295,6 +295,7 @@ sponsors:
                         {% for session in d.sessions %}
                                 <div class='list-group-item'>
                                 <a class = 'menuItem'>  {{ session.title }} </a>
+                                <p class = 'small hidden'> </p>
                                 </div>
                         {% endfor %}
                         </div>
@@ -459,6 +460,7 @@ sponsors:
     // TOOL LIST - ALL
     var toolList = document.getElementById('tool-list')
     var toolListElements = toolList.getElementsByClassName('list-group-item')
+    console.log(toolListElements)
     for(var i=0; i<toolListElements.length; i++){
             toolListElements[i].children[0].onclick = function(){
                  var idOfBlurb = this.id + 'Blurb';
@@ -469,8 +471,6 @@ sponsors:
     // SCHEDULE
     var dayList = document.getElementById('day-list')
     var dayListElements = dayList.getElementsByClassName('list-group-item')
-    console.log(dayList)
-    console.log(dayListElements)
 
     // REGISTRATION FLOWCHART
     var flowchartBtn = document.getElementById('reg_flowchart_btn')
