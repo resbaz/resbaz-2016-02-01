@@ -107,6 +107,18 @@
                 "marker-color": "#2b3990",
                 "details": "<a href='http://oudigitalscholar.com/resbaz/'>Oklahoma</a>"
             }
+        },
+
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":[-97.445891, 35.208280]
+            },
+            "properties": {
+                "marker-color": "#2b3990",
+                "details": "<a href='https://feb2016.resbaz.com/wellington/'>Victoria University</a>"
+            } 
         }
     ]
 }
