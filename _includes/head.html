@@ -7,11 +7,13 @@
     <meta name="author" content="">
 
     <!-- Changes the image and title displayed when link is share in facebook -->
-    <meta property="og:image" content="{{page.fbImage}}"/>
+    <meta property="og:image" content="{{site.baseurl}}/{{page.fbImage}}"/>
     <meta property="og:title" content="{{page.fbTitle}}"/>
     <meta property="og:description" content="{{page.description}}"/>
-		
-
+    <meta property="og:url" content="{{site.url}}/{{page.permalink}}"/>	
+    <meta property="og:site_name" content="ResBaz 2016"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:locale" content="{{page.fbLocale}}"/>	
 
     <title>Research Bazaar 2016</title>
 
