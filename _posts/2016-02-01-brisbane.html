@@ -89,6 +89,9 @@ speakers:
  - name: Ginny Barbour
    img: img/GinnyBarbour.jpg
    blurb: "Ginny has a longstanding interest in open access and research integrity and is currently the Executive Officer of <a href='http://aoasg.org.au/'>AOASG</a> and the Chair of <a href='http://publicationethics.org/'>COPE.</a> <a href='https://twitter.com/GinnyBarbour'>@GinnyBarbour</a>"
+ - name: Speaker Slides
+   img: "img/sponsors/fake-sponsor.png"
+   blurb: "The slides for the speakers and the lightning talks can be found <a href='https://drive.google.com/a/griffith.edu.au/folderview?id=0B-hlr8FWPssodVNSd0VlN2p5M0k&usp=sharing'>here.</a>"
 sponsors:
  - name: 'Queensland University of Technology'
    img: QUTlogo.jpg
@@ -169,6 +172,29 @@ sponsors:
         </div>
     </div>
 </section>
+
+
+<!-- Speakers -->
+<section id='speakerSection'>
+    <div class='container'>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>Meet Our Speakers</h1>
+                <hr class="star-primary">
+                {% for speaker in page.speakers %}
+                    <div class='col-md-6 speaker-tile'>
+                        <img class='img-circle' src={{site.baseurl}}/{{ speaker.img }}></img>
+                        <h4>{{ speaker.name }}</h4>
+                        <p>{{ speaker.blurb }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<hr class='divider'></hr>
 
 <!-- Menu -->
 <section id='menuSection'>
@@ -282,27 +308,7 @@ sponsors:
 
 <hr class='divider'></hr>
 
-<!-- Speakers -->
-<section id='speakerSection'>
-    <div class='container'>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1>Meet Our Speakers</h1>
-                <hr class="star-primary">
-                {% for speaker in page.speakers %}
-                    <div class='col-md-6 speaker-tile'>
-                        <img class='img-circle' src={{site.baseurl}}/{{ speaker.img }}></img>
-                        <h4>{{ speaker.name }}</h4>
-                        <p>{{ speaker.blurb }}</p>
-                    </div>
-                {% endfor %}
-            </div>
 
-        </div>
-    </div>
-</section>
-
-<hr class='divider'></hr>
 
 <!-- Accommodation -->
 <!--<section id="acommodation">
