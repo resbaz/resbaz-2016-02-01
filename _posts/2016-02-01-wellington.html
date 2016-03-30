@@ -4,78 +4,89 @@ permalink: wellington
 
 location: Wellington
 
-dates: April 26-27, 2016
+dates: April 26-28, 2016
 
 splashImage: https://upload.wikimedia.org/wikipedia/commons/2/21/WellingtonPano.jpg
 
-map: sites/template.geojson
+map: sites/wellington.geojson
 
-accommodation: Your accommodation text.
+accommodation: Coming to the Wellington ResBaz event from out of town? Wellington has accommodation options to suit all tastes and budgets. If you need advice please email learning and we will endeavour to help.
 
-menu: The Wellington Research Bazaar is a (free-of-charge) 2-day intensive conference where researchers come together to up-skill in ‘next generation digital research tools and skills’. <BR><BR><b>Location - </b><i>Victoria University of Wellington, Alan MacDiarmid Building. </i><BR><BR>
+menu: The Wellington Research Bazaar is a (free-of-charge) 3-day intensive conference where researchers come together to up-skill in ‘next generation digital research tools and skills’. <p>
+The Research Bazaar is a (free-of-charge) 3-day intensive conference where researchers come together to up-skill in ‘next generation digital research tools and skills’. In the spirit of a marketplace or bazaar, ResBaz is a highly participatory event where researchers from many different disciplines can learn, share knowledge and skills, and have fun!
+<p>
+Who should attend? Researchers at ALL levels from ALL disciplines. PhD and research Masters students are especially encouraged to apply. Research technologists who support researchers to do their job should also come along! 
+<p>
+NOTE! The Wellington event is being held 26-28th April, not 1-3 Feb as elsewhere in the world.
+
+We are still working on the programme to bring you a broad range of digital research skills topics but you should register now to avoid missing out. Below are just some of the sessions that will be on offer. 
+<BR><BR><b>Location - </b><i>Victoria University of Wellington, Alan MacDiarmid Building. </i><BR><BR>
 
 classes:
- - class: Main Streams
+ - class: CODE (SOFTWARE CARPENTRY)
    tools:
-    - name: tool1
+    - name: The Unix Shell
       id: id1
-      blurb: Description of tool # 1.
-    - name: tool2
+      blurb: The Unix Shell allows you to do complex things with just a few keystrokes. More importantly, it helps them combine existing programs in new ways and automate repetitive tasks.
+    - name: Programming with Python
       id: id2
-      blurb: Description of tool # 2.
-    - name: tooln
-      id: idn
-      blurb: Description of tool # n.
+      blurb: The best way to learn how to program is to do something useful, so this introduction to Python is built around a common scientific task - data analysis. Our real goal isn’t to teach you Python, but to teach you the basic concepts that all programming depends on.
+    - name: Version Control with Git
+      id: id3
+      blurb: Version control is the lab notebook of the digital world. It’s what professionals use to keep track of what they’ve done and to collaborate with other people. Every large software development project relies on it, and most programmers use it for their small jobs as well. And it isn’t just for software - books, papers, small data sets, and anything that changes over time or needs to be shared can and should be stored in a version control system..
 
- - class: Minor Electives
+ - class: LEARN
    tools:
-    - name: tool1
-      id: id1
-      blurb: Description of tool # 1.
-    - name: tool2
-      id: id2
-      blurb: Description of tool # 2.
-    - name: tooln
-      id: idn
-      blurb: Description of tool # n.
+    - name: Quick Qualtrics
+      id: id4
+      blurb: If data is the new gold, then survey-creation software Qaultrics maybe the gold digging tool you need. Learn how to capture both qualitative and quantitative data effectively by understanding survey design principles and tools.
+    - name: NVivo for Newbies
+      id: id5
+      blurb: Get an edge by better understanding the explosion of unstructured data in the world today using NVivo - powerful software for qualitative data analysis.
+    - name: <a href="https://storymap.knightlab.com/">StoryMap</a>
+      id: id6
+      blurb: StoryMap is a free tool that fuses digital mapping with interactive storytelling. 
+   - name: R for Novices
+      id: id6
+      blurb: StoryMap is a free tool that fuses digital mapping with interactive storytelling.       
+ - name: Excel for Research
+      id: id7
+      blurb: Microsoft Excel is widely used in a range of research contexts. Learn how to increase effeciency and effectiveness from a Microsoft expert. 
+
 
 schedule: Your schedule description.
 days:
- - day: Monday February 1
+ - day: Tuesday April 26
+   sessions:
+    - title: 
+    - title: session 2
+    - title: session 3
+    - title: evening
+ - day: Wednesday April 27
    sessions:
     - title: session 1
     - title: session 2
     - title: session 3
     - title: evening
- - day: Tuesday February 2
+ - day: Thursday April
    sessions:
     - title: session 1
-    - title: session 2
-    - title: session 3
-    - title: evening
- - day: Wednesday February 3
-   sessions:
-    - title: session 1
-    - title: session 2
-    - title: session 3
-    - title: evening
 speakers:
- - name:
+ - name: James Quilty - Engineering and Computer Science
    img: img/placehold.jpg
    blurb:
- - name: TBC
+ - name: 
    img: img/speakerTBC.jpg
    blurb: Our KeyStory speakers are still to be confirmed - watch this space!
  - name: You!
    img: img/sponsors/fake-sponsor.png
-   blurb: We want you to help lead a session; let us know if you're interested when you <a href="#registerSection">register</a>.
+   blurb: We want you to help lead a session; let us know if you're interested when you <a href="http://vuw.libcal.com/event/2343894">register</a>.
 sponsors:
- - name: 'Sponsor Number One'
-   img: fake-sponsor.png
- - name: 'Sponsor Number Two'
-   img: fake-sponsor.png
- - name: 'Sponsor Number Three'
-   img: fake-sponsor.png
+ - name: 'Victoria University of Wellington'
+   img: "http://www.victoria.ac.nz/__data/assets/image/0013/283/vic-logo_landscape_web-sr_rgb_v3.gif"
+ - name: 'NeSI'
+   img: "https://www.nesi.org.nz/sites/default/themes/nesi_bootstrap/img/logo.png"
+
 ---
 
 <!-- Navigation -->
@@ -93,7 +104,7 @@ sponsors:
                     <a href="#page-top"></a>
                 </li>
                 <li class="page-scroll">
-                    <a href="#menuSection">Menu</a>
+                    <a href="#menuSection">About</a>
                 </li>
                 <li class="page-scroll">
                     <a href="#scheduleSection">Schedule</a>
@@ -130,7 +141,7 @@ sponsors:
     <div class = 'container' id = 'tool-list'>
         <div class = "row">
             <div class = "col-lg-12 text-center">
-                <h1> Menu </h1>
+                <h1> About  </h1>
                 <hr class = "star-primary">
             </div>
         </div>
@@ -216,7 +227,7 @@ sponsors:
         </div>
         <div class="row">
             <div class="col-lg-4 col-lg-offset-2">
-                <p>Register here for the {{page.location}} Research Bazaar.</p>
+                <p>Register <a href="http://vuw.libcal.com/event/2343894"> here </a> for the {{page.location}} Research Bazaar.</p>
             </div>
             <div class="col-lg-4">
                 <p>The registration process starts with a Pre-Assessment Survey, so that we can create the best possible experience for you. Use the promo code given to you at the end of the survey to complete the registration form.</p>
@@ -226,7 +237,7 @@ sponsors:
                     <a href="https://docs.google.com/forms/d/1io9-YyETAl9sQ_NkIjehq4juemgnlaXilG17USHvjug/edit" target = "_blank" class="btn btn-lg btn-outline light-bkg">
                         <i class="fa fa-pencil"></i> Pre-Assessment Survey
                     </a>
-                    <a href="" target="_blank" class="btn btn-lg btn-outline light-bkg">
+                    <a href="http://vuw.libcal.com/event/2343894" target="_blank" class="btn btn-lg btn-outline light-bkg">
                         <i class="fa fa-users"></i> Register
                     </a>
                 </div>  
@@ -279,7 +290,7 @@ sponsors:
 <hr class='divider'></hr>
 
 <!-- Sponsors -->
-<!-- <section id="sponsors">
+<section id="sponsors">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
