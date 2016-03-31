@@ -113,11 +113,11 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates":[174.742442,-41.285109]
+                "coordinates":[174.7676603,41.2907442]
             },
             "properties": {
                 "marker-color": "#2b3990",
-                "details": "<a href='https://feb2016.resbaz.com/wellington'>Wellington</a>"
+                "details": "<a href='https://feb2016.resbaz.com/wellington/'>Wellington</a>
             } 
         }
     ]
