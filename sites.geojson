@@ -9,7 +9,7 @@
             },
             "properties": {
                 "marker-color": "#2b3990",
-                "details": "<a href='https://feb2016.resbaz.com/melbourne/'>Melbourne</a>"
+                "details": "<a href='https://feb2016.resbaz.com/melbourne'>Melbourne</a>"
             }
         },
 
@@ -21,7 +21,7 @@
             },
             "properties": {
                 "marker-color": "#2b3990",
-                "details": "<a href='https://feb2016.resbaz.com/auckland/'>Auckland</a>"
+                "details": "<a href='https://feb2016.resbaz.com/auckland'>Auckland</a>"
             }
         },
 
@@ -33,7 +33,7 @@
             },
             "properties": {
                 "marker-color": "#2b3990",
-                "details": "<a href='https://feb2016.resbaz.com/perth/'>Perth</a>"
+                "details": "<a href='https://feb2016.resbaz.com/perth'>Perth</a>"
             }
         },
 
@@ -45,7 +45,7 @@
             },
             "properties": {
                 "marker-color": "#2b3990",
-                "details": "<a href='https://feb2016.resbaz.com/dunedin/'>Dunedin</a>"
+                "details": "<a href='https://feb2016.resbaz.com/dunedin'>Dunedin</a>"
             }
         },
 
@@ -57,7 +57,7 @@
             },
             "properties": {
                 "marker-color": "#2b3990",
-                "details": "<a href='https://feb2016.resbaz.com/brisbane/'>Brisbane</a>"
+                "details": "<a href='https://feb2016.resbaz.com/brisbane'>Brisbane</a>"
             }
         },
 
@@ -81,7 +81,7 @@
             },
             "properties": {
                 "marker-color": "#2b3990",
-                "details": "Guayaquil (<a href='https://feb2016.resbaz.com/guayaquil-es/'>Español</a> | <a href='https://feb2016.resbaz.com/guayaquil-en/'>English</a>)"
+                "details": "Guayaquil (<a href='https://feb2016.resbaz.com/guayaquil-es'>Español</a> | <a href='https://feb2016.resbaz.com/guayaquil-en'>English</a>)"
             }
         },
 
@@ -113,11 +113,11 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates":[174.7676603,41.2907442]
+                "coordinates":[174.742442,-41.285109]
             },
             "properties": {
                 "marker-color": "#2b3990",
-                "details": "<a href='https://feb2016.resbaz.com/wellington/'>Wellington</a>"
+                "details": "<a href='https://feb2016.resbaz.com/wellington'>Wellington</a>"
             } 
         }
     ]
